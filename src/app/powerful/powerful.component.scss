@@ -1,0 +1,22 @@
+h1{
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.powerful-image{
+    display: block;
+}
+ .powerful{
+    padding: 60px 80px;
+}
+section.text-image{
+    display: flex;
+    gap: 100px;
+} 
+.text-image {
+    position: relative;
+    z-index: 1 ;  
+}
+img{
+    width: 700px;
+}
