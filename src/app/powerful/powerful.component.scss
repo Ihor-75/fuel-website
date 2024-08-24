@@ -7,15 +7,20 @@ h1{
     display: block;
 }
  .powerful{
-    padding: 60px 80px;
+    padding: 60px 0px;
 }
 section.text-image{
     display: flex;
     gap: 100px;
-} 
+    p{
+      font-size: 30px;
+      line-height: 1.5;
+        color: grey;
+    }
+}
 .text-image {
     position: relative;
-    z-index: 1 ;  
+    z-index: 1 ;
 }
 img{
     width: 700px;

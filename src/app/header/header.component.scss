@@ -1,0 +1,35 @@
+header {
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+ img {
+  width: 180px;
+ }
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 30px;
+    color: grey;
+    padding: 30px;
+    cursor: pointer;
+
+    .btns-wrapper {
+      button {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  button.login {
+    background-color: rgba(0, 0, 0, 0.845);
+    color: white;
+  }
+
+}

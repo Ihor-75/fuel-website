@@ -1,17 +1,17 @@
 $green:#07f968;
 form{
-    padding: 20px; 
+    padding: 20px;
     font-size: 20px;
-    background-color: #333;
+    background-color: #161616;
     border-radius:  24px;
     width: 50%;
 
 }
 form h2{
     margin-bottom: 20px;
-} 
+}
  button{
-    display: block;
+   display: block;
     margin: 20px 0px;
     background-color: $green;
     padding: 15px 20px;
@@ -23,13 +23,13 @@ form h2{
 button:hover{
     background-color: $green;
     box-shadow: 0 0 30px rgba(33, 248, 119, 0.6);
-   
+
 }
 
 form .colum {
     display: flex;
     flex-direction: column;
-    width: 50%; 
+    width: 50%;
 
 }
 
@@ -43,5 +43,6 @@ form input{
     font-size: 10px;
     background-color: black;
     border-radius: 6px;
-    border: 1px solid #4b4f4d; ; 
+    border: 1px solid #4b4f4d; ;
 }
+
