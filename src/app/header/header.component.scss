@@ -8,9 +8,11 @@ header {
   position: sticky;
   z-index: 5;
   top: 0;
- img {
-  width: 180px;
- }
+
+  img {
+    width: 180px;
+  }
+
   ul {
     display: flex;
     gap: 30px;
@@ -19,17 +21,16 @@ header {
     color: grey;
     padding: 30px;
     cursor: pointer;
+  }
 
-    .btns-wrapper {
-      button {
-        margin-right: 15px;
-      }
+  .btns-wrapper {
+    display: flex;
+    gap: 15px;
+
+    button {
+      margin-right: 15px;
     }
   }
 
-  button.login {
-    background-color: rgba(0, 0, 0, 0.845);
-    color: white;
-  }
 
 }

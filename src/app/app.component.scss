@@ -8,8 +8,12 @@ $green: #07f968;
 .green-warning {
   background-color: $green;
   height: auto;
-  min-height: auto;
-
+  min-height: auto;&:hover {
+      background-color: #31bd67;
+    }
+  a {
+    color: black;
+   }
   p {
     color: black;
     text-align: center;
