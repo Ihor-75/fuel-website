@@ -8,6 +8,8 @@ a {
   font-size: 22px;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
 
   &.green-btn {
     background-color: $green;

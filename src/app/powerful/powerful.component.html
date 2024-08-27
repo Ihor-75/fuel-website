@@ -1,5 +1,15 @@
 <section class="powerful">
-  <h1>Powerful dashboards and financial services for e-commerce businesses </h1>
+  <h1>{{ date | date :'mediumDate' }}
+    Powerful dashboards and financial services for e-commerce businesses
+  </h1>
+
+  <button class="green-btn" (click)="incrementCounter()">Click {{counter}}
+
+  </button>
+
+  <button class="green-btn" (click)="nextDay()">Next Day</button>
+
+
 
 
   <section class="text-image">

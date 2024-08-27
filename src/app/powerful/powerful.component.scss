@@ -1,27 +1,37 @@
-h1{
-    font-size: 70px;
-    font-weight: 300;
-    margin-bottom: 40px;
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
-.powerful-image{
-    display: block;
+
+.powerful-image {
+  display: block;
 }
- .powerful{
-    padding: 60px 0px;
+
+.powerful {
+  padding: 60px 0px;
 }
-section.text-image{
-    display: flex;
-    gap: 100px;
-    p{
-      font-size: 30px;
-      line-height: 1.5;
-        color: grey;
-    }
+
+section.text-image {
+  display: flex;
+  gap: 100px;
+
+  p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: grey;
+  }
 }
+
 .text-image {
-    position: relative;
-    z-index: 1 ;
+  position: relative;
+  z-index: 1;
 }
-img{
-    width: 700px;
+
+img {
+  width: 700px;
+}
+
+.green-btn {
+  margin-right: 20px;
 }
