@@ -1,0 +1,26 @@
+p {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+ul {
+  color: rgb(255 255 255 / 55%);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  list-style-type: none;
+
+  li:before {
+    content: "✔";
+    padding-right: 5px;
+  }
+}
+
+img {
+  width: 500px;
+}
+
+section {
+  display: flex;
+}

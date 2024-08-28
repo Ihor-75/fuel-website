@@ -33,11 +33,14 @@ export class CalculatorComponent {
     console.log(this.calculateString);
 
     if (this.calculateString.includes('+')) {
-      console.log('we have plus', this.calculateString[0], this.calculateString[1], this.calculateString[2]);
+      console.log('we have plus', this.calculateString);
 
-      const firstNumber = +this.calculateString[0];
+      const numbers = this.calculateString.split('+');
+       console.log('numbers:', numbers[0], numbers[1])
+
+      const firstNumber = +numbers[0];
       console.log('firstNumber:', firstNumber)
-      const secondNumber = +this.calculateString[2];
+      const secondNumber = +numbers[1];
       console.log('secondNumber:', secondNumber)
 
       const sum = firstNumber + secondNumber;
@@ -47,11 +50,16 @@ export class CalculatorComponent {
       console.log('calculateString:', this.calculateString)
     }
     if (this.calculateString.includes('/',)) {
-      console.log('we have /', this.calculateString[0], this.calculateString[1], this.calculateString[2]);
-      const firstNumber = +this.calculateString[0]
-      console.log('firstnumber', firstNumber)
-      const secondNumber = +this.calculateString[2]
-      console.log('secondNumber', secondNumber)
+      console.log('we have /', this.calculateString);
+
+      const numbers = this.calculateString.split('/')
+      console.log('numbers', numbers[0], numbers[1])
+
+      const firstNumber = +numbers[0];
+      console.log('firstNumber:', firstNumber)
+      const secondNumber = +numbers[1];
+      console.log('secondNumber:', secondNumber)
+
 
       const divide = firstNumber / secondNumber;
       console.log('divide:', divide)
@@ -61,10 +69,14 @@ export class CalculatorComponent {
 
     }
     if (this.calculateString.includes('-')) {
-      console.log('we have -', this.calculateString[0], this.calculateString[1], this.calculateString[2])
-      const firstnumber = +this.calculateString[0]
+      console.log('we have -', this.calculateString)
+
+      const numbers = this.calculateString.split('-')
+      console.log('numbers', numbers[0], numbers[1])
+
+      const firstnumber = +numbers[0]
       console.log('firstNumber', firstnumber)
-      const secondNumber = +this.calculateString[2]
+      const secondNumber = +numbers[1]
       console.log('secondNumber', secondNumber)
 
       const minus = firstnumber - secondNumber;
@@ -72,6 +84,25 @@ export class CalculatorComponent {
 
       this.calculateString = minus.toString()
       console.log('calculeString', this.calculateString)
+    }
+    if (this.calculateString.includes('*')) {
+      console.log('we have -', this.calculateString)
+
+      const numbers = this.calculateString.split('*')
+      console.log('numbers', numbers[0], numbers[1])
+
+      const firstnumber = +numbers[0]
+      console.log('firstnumber', firstnumber)
+
+      const secondNumber = +numbers[1]
+      console.log('secondnumber', secondNumber)
+
+      const multiply = firstnumber * secondNumber;
+      console.log('multiply', multiply)
+
+      this.calculateString = multiply.toString()
+      console.log('calculeString', this.calculateString)
+
     }
   }
 
