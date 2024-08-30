@@ -85,11 +85,69 @@
   </div>
 </section>
 
+
 <section class="under">
   <p class="under1">Under the hood</p>
 
-  <p>We can spend a lot of time on this, but who cares? What matters most for our clients is that their finance is in
-    order.
-    Buckle up for the ride 🚀</p>
+  <section class="icons ">
+    <div class="Security">
+      <img src="under1.png" alt="">
+      <div>
+        <p>Security and Data</p>
+        <ul>
+          <li>
+            Fuel uses proprietary software to save the data in its secure cloud, which ensures that everything works
+            fast,
+            and no
+            data is damaged.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="Spreadsheets">
+      <img src="under2.png" alt="">
+      <div>
+        <p>Fuel Spreadsheets</p>
+        <ul>
+          <li>What is so special about those Google Spreadsheets from Fuel? Can’t just anyone makes them? Well, not
+            really. We
+            constantly explore and implement the best practices in data models, security, reliability, and
+            business-model-related
+            ways to manage one’s finances and forecasting.</li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="Integrations">
+
+      <div class="Integrations-icons">
+        <img src="under1.png" alt="">
+        <img src="under2.png" alt="">
+        <img src="under3.png" alt="">
+        <img *ngIf="allImages" src="under4.png" alt="">
+        <img *ngIf="allImages" src="under5.png" alt="">
+        <img *ngIf="allImages" src="under6.png" alt="">
+        <img *ngIf="allImages" src="under7.png" alt="">
+        <img *ngIf="allImages" src="under8.png" alt="">
+        <img *ngIf="allImages" src="under9.png" alt="">
+        <button class="pointer" (click)="allImages = !allImages">
+          +7
+        </button>
+      </div>
+
+      <div>
+        <p>Integrations</p>
+        <ul>
+          <li>
+            We also have a suite of connectors to integrate with your most often-used 3rd-party services, and we keep
+            those
+            connectors updated as the services evolve.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </section>
+<p>We can spend a lot of time on this, but who cares? What matters most for our clients is that their finance is in
+  order.
+  Buckle up for the ride 🚀</p>

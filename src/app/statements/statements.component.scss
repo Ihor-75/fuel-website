@@ -1,8 +1,16 @@
 p {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin: 30px;
+}
+
+.Integrations {
+  &-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 ul {
@@ -23,4 +31,24 @@ img {
 
 section {
   display: flex;
+}
+
+.under {
+  img {
+    width: 80px;
+  }
+
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.icons {
+
+  &>div {
+    width: 33%;
+    margin: 10px;
+  }
 }
