@@ -17,6 +17,16 @@ h1 {
   margin-right: 25px;
 }
 
+.column {
+  width: 33%;
+  padding: 32px;
+
+  &:nth-child(2) {
+    border: 4px solid #07f968;
+    border-radius: 15px;
+  }
+}
+
 .button-get {
   background-color: rgb(255, 255, 255);
   height: 50px;
@@ -25,7 +35,7 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  margin: 32px;
+  margin: 32px 0;
   color: black;
 }
 
@@ -35,9 +45,9 @@ h1 {
 }
 
 .essential {
-  width: 440px;
+  /* width: 440px;*/
   margin-right: 24px;
-  padding: 32px;
+  /* padding: 32px;*/
 }
 
 .growth-title {
@@ -47,9 +57,9 @@ h1 {
 }
 
 .growth {
-  width: 440px;
+  /* width: 440px;*/
   margin-right: 24px;
-  padding: 32px;
+  /*padding: 32px;*/
 }
 
 .custom-title {
@@ -58,9 +68,9 @@ h1 {
 }
 
 .custom {
-  width: 440px;
+  /* width: 440px;*/
   margin-right: 24px;
-  padding: 32px;
+  /* padding: 32px;*/
 }
 
 .custom-title {
@@ -108,7 +118,7 @@ h1 {
 
 .simple-better {
   display: flex;
-  ;
+  margin: 0 -250px;
 }
 
 
