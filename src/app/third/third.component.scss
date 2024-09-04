@@ -1,0 +1,97 @@
+$green: #07f968;
+
+.bg-color {
+  background-color: black;
+  color: white;
+}
+
+.green-warning {
+  background-color: $green;
+  height: auto;
+  min-height: auto;
+
+  &:hover {
+    background-color: #31bd67;
+  }
+
+  a {
+    color: black;
+  }
+
+  p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.75rem;
+    margin: 0;
+  }
+}
+
+.messager {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+
+  .img {
+    width: 60%;
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+app-form {
+  display: block;
+  margin: 100px 0 200px;
+}
+
+.table {
+  background-color: rgb(247, 240, 255);
+  color: black;
+}
+
+table {
+  font-size: 16px;
+  margin: 100px auto;
+
+  tr {
+    border-bottom: 1px solid rgb(235, 217, 217);
+
+    td,
+    th {
+      /* border: 1px solid rgb(238, 225, 225);*/
+      padding: 15px;
+      border-right: 1px solid rgb(255, 247, 247);
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.red {
+  background-color: red;
+  color: white;
+
+  &.round-first {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &.round-last {
+    border-radius: 0 0 10px 10px;
+  }
+}
