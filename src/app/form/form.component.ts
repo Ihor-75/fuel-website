@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule , CommonModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss'
 })
@@ -84,5 +85,20 @@ export class FormComponent {
       console.log('calculeString', this.calculateString)
     }
   }
+  age: number = 25
+  birthday = new Date(1996, 5, 4);
+
+  calculateAge() {
+
+    const date = new Date(this.birthday);
+   /* console.log('calculateAge', date.getFullYear());*/
+
+    const year = date.getFullYear();
+
+    const currentYear = new Date().getFullYear();
+    
+
+    this.age = currentYear - year;
+}
 
 }

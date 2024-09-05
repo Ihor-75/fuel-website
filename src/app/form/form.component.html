@@ -15,4 +15,17 @@
 
   <button>Get started</button>
 
+  <section class="input-types birthday">
+    <div class="wrapper">
+      <label>Enter your birthday:</label>
+      <input type="date" [(ngModel)]="birthday">
+
+      <button (click)="calculateAge()">Calculate</button>
+
+      <label>Your age is: </label>
+      <label> {{age}}</label>
+    </div>
+
+  </section>
+
 </form>

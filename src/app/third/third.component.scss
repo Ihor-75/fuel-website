@@ -95,3 +95,32 @@ table {
     border-radius: 0 0 10px 10px;
   }
 }
+
+.input-types {
+  background-color: rgb(116, 23, 23);
+  color: black;
+  min-height: 100vh;
+  padding: 10vh;
+
+  .wrapper {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  input,
+  textarea {
+    background-color: white;
+    font-size: 35px;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  label {
+    color: white;
+    font-size: 35px;
+  }
+}
