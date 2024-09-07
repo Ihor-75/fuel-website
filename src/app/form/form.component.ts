@@ -96,9 +96,10 @@ export class FormComponent {
     const year = date.getFullYear();
 
     const currentYear = new Date().getFullYear();
-    
+
 
     this.age = currentYear - year;
+
 }
 
 }

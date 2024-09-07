@@ -1,54 +1,54 @@
-<footer> 
-    <div class="row">
-      <ul>
-        <h3>Fuelfinance</h3>
-        <li>Book a demo</li>
-        <li>Products</li>
-        <li>Pricing</li>
-      </ul>
-      
-      <ul>
-        <h3>Solutions</h3>
-        <li>Saas</li>
-        <li>E-commerce</li>
-        <li>Professional services</li>
-        <li>Construction</li>
-        <li>Other</li>
-      </ul>
-      
-      <ul>
-        <h3>Resources</h3>
-        <li>Blog</li>
-        <li>Case Studies</li>
-        <li>Video</li>
-        <li>Templates</li>
-      </ul>
-      
-      <ul>
-        <h3>Company</h3>
-        <li>Careers</li>
-      </ul>
+<footer>
+  <div class="row">
+    <ul>
+      <h3>Fuelfinance</h3>
+      <li>Book a demo</li>
+      <li>Products</li>
+      <li>Pricing</li>
+    </ul>
+
+    <ul>
+      <h3>Solutions</h3>
+      <li>Saas</li>
+      <li>E-commerce</li>
+      <li>Professional services</li>
+      <li>Construction</li>
+      <li>Other</li>
+    </ul>
+
+    <ul>
+      <h3>Resources</h3>
+      <li>Blog</li>
+      <li>Case Studies</li>
+      <li>Video</li>
+      <li>Templates</li>
+    </ul>
+
+    <ul>
+      <h3>Company</h3>
+      <li>Careers</li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="rewards">
+      <img src=" " alt="">
+      <img src=" " alt="">
+      <img src=" " alt="">
     </div>
-    <div class="row">
-      <div class="rewards">
-        <img src=" " alt="">
-        <img src=" " alt="">
-        <img src=" " alt="">
-      </div>
-      <div class="links">
-        <p>Fuel 2019—2024. All Rights Reserved.</p>
-        <p>
-          Design by 
-          <a href="https://www.commercialmagic.agency/?ref=land-book.com">Commercial Magic.</a>
-          <a href="https://fuelfinance.me/privacy-notice/?ref=land-book.com">Privacy Notice</a>
-          &
-          <a href="https://fuelfinance.me/terms-of-service/?ref=land-book.com">Terms.</a>
-        </p>
-        <p>
-          Got questions? 
-          <a href="mailto:info@fuelfinance.me"> info&#64;fuelfinance.me </a>
-        </p>
-      </div>
+    <div class="links">
+      <p>Fuel 2019—2024. All Rights Reserved.</p>
+      <p>
+        Design by
+        <a href="https://www.commercialmagic.agency/?ref=land-book.com">Commercial Magic.</a>
+        <a href="https://fuelfinance.me/privacy-notice/?ref=land-book.com">Privacy Notice</a>
+        &
+        <a href="https://fuelfinance.me/terms-of-service/?ref=land-book.com">Terms.</a>
+      </p>
+      <p>
+        Got questions?
+        <a href="mailto:info@fuelfinance.me"> info&#64;fuelfinance.me </a>
+      </p>
     </div>
-  
-  </footer> 
+  </div>
+  <a *ngFor="let media of socialMedia" class="icon icon-{{media.icon}}" [href]="media.url">{{media.name}}</a>
+</footer>

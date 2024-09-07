@@ -17,7 +17,7 @@
     <app-header></app-header>
 
     <section class="products">
-      <h1>Products </h1>
+      <h1>{{pageobject.header}}</h1>
       <p>
         Fuel combines the power of AI and a team of financial professionals to provide you with clean and precise
         spreadsheets
@@ -26,12 +26,9 @@
         decisions for your business.
       </p>
       <ul>
-        <li><span> </span>Financial Statements</li>
-        <li><span> </span>Dashboards</li>
-        <li><span> </span>Monthly updates</li>
-        <li><span> </span>Unit economics</li>
-        <li><span> </span>Financial Planning</li>
-        <li><span> </span>Plan/Actual analysis</li>
+        <li *ngFor="let item of pageobject.list">
+          <span> </span>{{item}}
+        </li>
       </ul>
 
     </section>
