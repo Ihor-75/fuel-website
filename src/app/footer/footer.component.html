@@ -31,18 +31,24 @@
   </div>
   <div class="row">
     <div class="rewards">
-      <img src=" " alt="">
-      <img src=" " alt="">
-      <img src=" " alt="">
+      <img src=" " alt="" />
+      <img src=" " alt="" />
+      <img src=" " alt="" />
     </div>
     <div class="links">
       <p>Fuel 2019—2024. All Rights Reserved.</p>
       <p>
         Design by
-        <a href="https://www.commercialmagic.agency/?ref=land-book.com">Commercial Magic.</a>
-        <a href="https://fuelfinance.me/privacy-notice/?ref=land-book.com">Privacy Notice</a>
+        <a href="https://www.commercialmagic.agency/?ref=land-book.com"
+          >Commercial Magic.</a
+        >
+        <a href="https://fuelfinance.me/privacy-notice/?re'f=land-book.com"
+          >Privacy Notice</a
+        >
         &
-        <a href="https://fuelfinance.me/terms-of-service/?ref=land-book.com">Terms.</a>
+        <a href="https://fuelfinance.me/terms-of-service/?ref=land-book.com"
+          >Terms.</a
+        >
       </p>
       <p>
         Got questions?
@@ -50,5 +56,10 @@
       </p>
     </div>
   </div>
-  <a *ngFor="let media of socialMedia" class="icon icon-{{media.icon}}" [href]="media.url">{{media.name}}</a>
+  <a
+    *ngFor="let media of socialMedia"
+    class="icon icon-{{ media.icon }}"
+    [href]="media.url"
+    >{{ media.name }}</a
+  >
 </footer>
