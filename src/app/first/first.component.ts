@@ -10,10 +10,15 @@ import { CalculatorComponent } from './../calculator/calculator.component';
 @Component({
   selector: 'app-first',
   standalone: true,
-  imports: [MoreServiceComponent, FormComponent,PowerfulComponent,FooterComponent,HeaderComponent,CalculatorComponent],
+  imports: [
+    MoreServiceComponent,
+    FormComponent,
+    PowerfulComponent,
+    FooterComponent,
+    HeaderComponent,
+    CalculatorComponent,
+  ],
   templateUrl: './first.component.html',
-  styleUrl: './first.component.scss'
+  styleUrl: './first.component.scss',
 })
-export class FirstComponent {
-
-}
+export class FirstComponent {}

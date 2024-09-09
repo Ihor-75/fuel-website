@@ -21,6 +21,20 @@ header {
     color: grey;
     padding: 30px;
     cursor: pointer;
+
+    li {
+      &.inner-block {
+        position: relative;
+
+        app-header-hover-block {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          box-shadow: 0 0 10px black;
+          z-index: 10;
+        }
+      }
+    }
   }
 
   .btns-wrapper {

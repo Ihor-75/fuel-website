@@ -1,14 +1,27 @@
 <header>
   <div class="img-wrapper">
-    <img src="logo.svg" alt="">
+    <img src="logo.jpg" alt="" />
   </div>
-
 
   <ul>
     <li>Products</li>
-    <li>Solutions</li>
+    <li
+      class="inner-block"
+      (mouseenter)="openBlock(0)"
+      (mouseleave)="closeBlock(0)"
+    >
+      <span>Solutions</span>
+      <app-header-hover-block *ngIf="blocksOpen[0]"> </app-header-hover-block>
+    </li>
     <li>Pricing</li>
-    <li>Resources</li>
+    <li
+      class="inner-block"
+      (mouseenter)="openBlock(1)"
+      (mouseleave)="closeBlock(1)"
+    >
+      <span> Resources</span>
+      <app-header-hover-block *ngIf="blocksOpen[1]"> </app-header-hover-block>
+    </li>
   </ul>
 
   <div class="btns-wrapper">
@@ -17,8 +30,12 @@
 
     </button> -->
 
-    <a class="grey-btn" href="https://fuelfinance.me/demo/?ref=land-book.com">Login</a>
-    <a class="green-btn" href="https://fuelfinance.me/demo/?ref=land-book.com">Book a demo</a>
+    <a class="grey-btn" href="https://fuelfinance.me/demo/?ref=land-book.com"
+      >Login</a
+    >
+    <a class="green-btn" href="https://fuelfinance.me/demo/?ref=land-book.com"
+      >Book a demo</a
+    >
 
     <!-- <button class="green-btn">
       <p>
@@ -27,6 +44,5 @@
 
     </button> -->
   </div>
-
-
 </header>
+<!--<app-header-hover-block> </app-header-hover-block>  -->

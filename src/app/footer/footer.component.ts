@@ -9,6 +9,31 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
+  pageall = [
+    {
+      footer: 'Fuelfinance',
+      list: ['Book a demo', 'Products', 'Pricing'],
+    },
+    {
+      footer: 'Solutions',
+      list: [
+        'Saas',
+        'E-commerce',
+        'Professional services',
+        'Construction',
+        'Other',
+      ],
+    },
+    {
+      footer: 'Resources',
+      list: ['Blog', 'Case Studies', 'Video', 'Templates'],
+    },
+    {
+      footer: 'Company',
+      list: ['Careers'],
+    },
+  ];
+
   socialMedia = [
     {
       name: 'Facebok',

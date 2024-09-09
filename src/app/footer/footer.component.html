@@ -1,32 +1,8 @@
 <footer>
   <div class="row">
-    <ul>
-      <h3>Fuelfinance</h3>
-      <li>Book a demo</li>
-      <li>Products</li>
-      <li>Pricing</li>
-    </ul>
-
-    <ul>
-      <h3>Solutions</h3>
-      <li>Saas</li>
-      <li>E-commerce</li>
-      <li>Professional services</li>
-      <li>Construction</li>
-      <li>Other</li>
-    </ul>
-
-    <ul>
-      <h3>Resources</h3>
-      <li>Blog</li>
-      <li>Case Studies</li>
-      <li>Video</li>
-      <li>Templates</li>
-    </ul>
-
-    <ul>
-      <h3>Company</h3>
-      <li>Careers</li>
+    <ul *ngFor="let list of pageall">
+      <h3>{{ list.footer }}</h3>
+      <li *ngFor="let item of list.list">{{ item }}</li>
     </ul>
   </div>
   <div class="row">

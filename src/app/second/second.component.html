@@ -1,38 +1,32 @@
 <div class="bg-color">
   <div class="messager">
-
-    <img class="messager-image" src="messager.svg">
-
+    <img class="messager-image" src="messager.svg" />
   </div>
 
   <section class="green-warning">
     <p>
-      <a href="https://fuelfinance.me/bootstrap/?ref=land-book.com">Early-stage founder? Our new free product is live!
-        Try it now.</a>
+      <a href="https://fuelfinance.me/bootstrap/?ref=land-book.com"
+        >Early-stage founder? Our new free product is live! Try it now.</a
+      >
     </p>
-
   </section>
   <main class="container">
-
     <app-header></app-header>
 
     <section class="products">
-      <h1>{{pageobject.header}}</h1>
+      <h1>{{ pageobject.header }}</h1>
       <p>
-        Fuel combines the power of AI and a team of financial professionals to provide you with clean and precise
-        spreadsheets
-        and graphs. Our goal is to make sure you don't spend time organizing data, and instead, spend it on making the
-        right
-        decisions for your business.
+        Fuel combines the power of AI and a team of financial professionals to
+        provide you with clean and precise spreadsheets and graphs. Our goal is
+        to make sure you don't spend time organizing data, and instead, spend it
+        on making the right decisions for your business.
       </p>
       <ul>
-        <li *ngFor="let item of pageobject.list">
-          <span> </span>{{item}}
-        </li>
+        <li *ngFor="let item of pageobject.list"><span> </span>{{ item }}</li>
       </ul>
-
     </section>
     <app-statements></app-statements>
     <app-form></app-form>
     <app-footer></app-footer>
   </main>
+</div>
