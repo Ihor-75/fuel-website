@@ -11,7 +11,8 @@
       (mouseleave)="closeBlock(0)"
     >
       <span>Solutions</span>
-      <app-header-hover-block *ngIf="blocksOpen[0]"> </app-header-hover-block>
+      <app-header-hover-block *ngIf="blocksOpen[0]" [config]="blockall[0]">
+      </app-header-hover-block>
     </li>
     <li>Pricing</li>
     <li
@@ -20,7 +21,8 @@
       (mouseleave)="closeBlock(1)"
     >
       <span> Resources</span>
-      <app-header-hover-block *ngIf="blocksOpen[1]"> </app-header-hover-block>
+      <app-header-hover-block *ngIf="blocksOpen[1]" [config]="blockall[1]">
+      </app-header-hover-block>
     </li>
   </ul>
 

@@ -8,13 +8,13 @@
     </ul>
   </div>
   <div class="img-wrapper">
-    <img src="image1.svg" alt="">
+    <img src="image1.svg" alt="" />
   </div>
 </section>
 
 <section class="monthly process">
   <div class="img-wrapper">
-    <img src="image2.svg" alt="">
+    <img src="image2.svg" alt="" />
   </div>
 
   <div>
@@ -23,7 +23,10 @@
     <ul>
       <li>Integrate with existing reports and departments</li>
       <li>We suggest new flows and metrics where needed</li>
-      <li>Your regular management process now feeds information into financial reports and forecasts</li>
+      <li>
+        Your regular management process now feeds information into financial
+        reports and forecasts
+      </li>
     </ul>
   </div>
 </section>
@@ -32,122 +35,83 @@
   <div>
     <p>Financial projections/planning</p>
     <ul>
-      <li>Based on your historical data and future plans, we build two versions of forecast which show the band of
-        future
-        possibilities</li>
+      <li>
+        Based on your historical data and future plans, we build two versions of
+        forecast which show the band of future possibilities
+      </li>
       <li>We update this forecast monthly/weekly</li>
     </ul>
   </div>
 
   <div class="img-wrapper">
-    <img src="image3.svg" alt="">
+    <img src="image3.svg" alt="" />
   </div>
 </section>
 
 <section class="Plans">
   <div class="img-wrapper">
-    <img src="image4.svg" alt="">
+    <img src="image4.svg" alt="" />
   </div>
   <div>
     <p>Plan/Actual analysis</p>
     <ul>
-      <li>One of the most helpful processes and when conducted on monthly basis, allows to achieve high-precision
-        forecasting</li>
+      <li>
+        One of the most helpful processes and when conducted on monthly basis,
+        allows to achieve high-precision forecasting
+      </li>
     </ul>
   </div>
 </section>
 
 <section class="Unit economics">
   <div>
-    <p>Unit economics
-    </p>
+    <p>Unit economics</p>
     <ul>
-      <li>Shows how your lifetime value (LTV) compares with your customer acquisition cost (CAC)</li>
-      <li>Allows for correct sales and marketing planning on daily- or per-campaign- basis</li>
-      <li>Creates a framework to highlight non-obvious expenses that scale with user base growth</li>
+      <li>
+        Shows how your lifetime value (LTV) compares with your customer
+        acquisition cost (CAC)
+      </li>
+      <li>
+        Allows for correct sales and marketing planning on daily- or
+        per-campaign- basis
+      </li>
+      <li>
+        Creates a framework to highlight non-obvious expenses that scale with
+        user base growth
+      </li>
     </ul>
   </div>
 
   <div class="img-wrapper">
-    <img src="image5.svg" alt="">
+    <img src="image5.svg" alt="" />
   </div>
 </section>
 <section class="Dashboards">
   <div class="img-wrapper">
-    <img src="image6.svg" alt="">
+    <img src="image6.svg" alt="" />
   </div>
   <div>
     <p>Dashboards</p>
     <ul>
-      <li>Depending on your business model, we use best practices and recommend which KPIs you should be focused on</li>
+      <li>
+        Depending on your business model, we use best practices and recommend
+        which KPIs you should be focused on
+      </li>
       <li>Fully customizable and tailored for you by your dedicated manager</li>
     </ul>
   </div>
 </section>
 
-
 <section class="under">
   <p class="under1">Under the hood</p>
 
-  <section class="icons ">
-    <div class="Security">
-      <img src="under1.png" alt="">
-      <div>
-        <p>Security and Data</p>
-        <ul>
-          <li>
-            Fuel uses proprietary software to save the data in its secure cloud, which ensures that everything works
-            fast,
-            and no
-            data is damaged.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="Spreadsheets">
-      <img src="under2.png" alt="">
-      <div>
-        <p>Fuel Spreadsheets</p>
-        <ul>
-          <li>What is so special about those Google Spreadsheets from Fuel? Can’t just anyone makes them? Well, not
-            really. We
-            constantly explore and implement the best practices in data models, security, reliability, and
-            business-model-related
-            ways to manage one’s finances and forecasting.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="Integrations">
-
-      <div class="Integrations-icons">
-        <img src="under1.png" alt="">
-        <img src="under2.png" alt="">
-        <img src="under3.png" alt="">
-        <img *ngIf="allImages" src="under4.png" alt="">
-        <img *ngIf="allImages" src="under5.png" alt="">
-        <img *ngIf="allImages" src="under6.png" alt="">
-        <img *ngIf="allImages" src="under7.png" alt="">
-        <img *ngIf="allImages" src="under8.png" alt="">
-        <img *ngIf="allImages" src="under9.png" alt="">
-        <button class="pointer" (click)="allImages = !allImages">
-          +7
-        </button>
-      </div>
-
-      <div>
-        <p>Integrations</p>
-        <ul>
-          <li>
-            We also have a suite of connectors to integrate with your most often-used 3rd-party services, and we keep
-            those
-            connectors updated as the services evolve.
-          </li>
-        </ul>
-      </div>
-    </div>
+  <section class="icons">
+    <app-icons-security [config]="blockall[0]"></app-icons-security>
+    <app-icons-security [config]="blockall[1]"></app-icons-security>
+    <app-icons-security [config]="blockall[2]"></app-icons-security>
   </section>
 </section>
-<p>We can spend a lot of time on this, but who cares? What matters most for our clients is that their finance is in
-  order.
-  Buckle up for the ride 🚀</p>
+<p>
+  We can spend a lot of time on this, but who cares? What matters most for our
+  clients is that their finance is in order. Buckle up for the ride 🚀
+</p>

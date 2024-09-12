@@ -1,16 +1,33 @@
 <div class="block">
   <ul class="block__list">
+    <li *ngFor="let item of config.list">{{ item }}</li>
+  </ul>
+  <!--   <ul class="block__list">
     <li><span> </span>Saas</li>
     <li><span> </span>E-commerce</li>
     <li><span> </span>Profesional services</li>
     <li><span> </span>Construction</li>
     <li><span> </span>Other</li>
-  </ul>
+  </ul> -->
   <div class="block__right">
-    <img src="solutions.jpg" alt="" />
-    <p>How Petcube became profitable with Fuelfinance</p>
-    <a href="https://fuelfinance.me/petcube-case-study/?ref=land-book.com"
-      >READ CASE STUDY <i>☛</i></a
-    >
+    <img [src]="config.image" alt="" />
+    <p>{{ config.text }}</p>
+    <a [href]="config.link_ahref">{{ config.link_text }} <i>☛</i></a>
   </div>
 </div>
+<!-- <div class="block__resources">
+  <ul class="block__list">
+    <li><span> </span>All</li>
+    <li><span> </span>Blog</li>
+    <li><span> </span>Video</li>
+    <li><span> </span>Templates</li>
+    <li><span> </span>Case Studies</li>
+  </ul>
+  <div class="block__right">
+    <img src="resoursec.png" alt="" />
+    <p>Unit Economics Cheat Sheet</p>
+    <a href="https://fuelfinance.me/petcube-case-study/?ref=land-book.com"
+      >GET YOUR FREE COPY<i>☛</i></a
+    >
+  </div>
+</dv> -->

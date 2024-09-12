@@ -1,0 +1,54 @@
+p {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 300;
+  margin: 30px;
+}
+
+.Integrations {
+  &-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+ul {
+  color: rgb(255 255 255 / 55%);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  list-style-type: none;
+
+  li:before {
+    content: "✔";
+    padding-right: 5px;
+  }
+}
+
+img {
+  width: 500px;
+}
+
+section {
+  display: flex;
+}
+
+.under {
+  img {
+    width: 80px;
+  }
+
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.icons {
+
+  &>div {
+    width: 33%;
+    margin: 10px;
+  }
+}

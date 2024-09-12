@@ -5,6 +5,9 @@ import { StatementsComponent } from '../statements/statements.component';
 import { FormComponent } from '../form/form.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { IconsIntegrationsComponent } from '../icons-integrations/icons-integrations.component';
+import { IconsSecurityComponent } from '../icons-security/icons-security.component';
+import { IconsSpreadsheetsComponent } from '../icons-spreadsheets/icons-spreadsheets.component';
 
 @Component({
   selector: 'app-second',
@@ -15,6 +18,9 @@ import { CommonModule } from '@angular/common';
     FormComponent,
     FooterComponent,
     CommonModule,
+    IconsIntegrationsComponent,
+    IconsSecurityComponent,
+    IconsSpreadsheetsComponent,
   ],
   templateUrl: './second.component.html',
   styleUrl: './second.component.scss',

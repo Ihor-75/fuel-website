@@ -1,0 +1,32 @@
+p {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+p {
+  color: rgb(255 255 255 / 55%);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+section {
+  display: flex;
+}
+
+img {
+  width: 80px;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
