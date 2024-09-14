@@ -1,0 +1,13 @@
+<section [class.reverse]="config.reverse" class="Dashboards">
+  <div class="img-wrapper">
+    <img src="{{ config.image }}" alt="" />
+  </div>
+  <div>
+    <p>{{ config.text }}</p>
+    <ul>
+      <li *ngFor="let item of config.list">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+</section>

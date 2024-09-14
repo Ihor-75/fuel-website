@@ -1,4 +1,4 @@
-<section class="financial statements">
+<!-- <section class="financial statements">
   <div>
     <p>Three basic financial statements</p>
     <ul>
@@ -100,7 +100,9 @@
       <li>Fully customizable and tailored for you by your dedicated manager</li>
     </ul>
   </div>
-</section>
+</section> -->
+<app-financial-block *ngFor="let item of financialblockall" [config]="item">
+</app-financial-block>
 
 <section class="under">
   <p class="under1">Under the hood</p>

@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 import { IconsIntegrationsComponent } from '../icons-integrations/icons-integrations.component';
 import { IconsSecurityComponent } from '../icons-security/icons-security.component';
 import { IconsSpreadsheetsComponent } from '../icons-spreadsheets/icons-spreadsheets.component';
+import { FinancialBlockComponent } from '../financial-block/financial-block.component';
+import { text } from 'stream/consumers';
+import { reverse } from 'dns';
 
 @Component({
   selector: 'app-statements',
@@ -12,7 +15,9 @@ import { IconsSpreadsheetsComponent } from '../icons-spreadsheets/icons-spreadsh
     IconsIntegrationsComponent,
     IconsSecurityComponent,
     IconsSpreadsheetsComponent,
+    FinancialBlockComponent,
   ],
+
   templateUrl: './statements.component.html',
   styleUrl: './statements.component.scss',
 })
@@ -44,6 +49,65 @@ export class StatementsComponent {
         'under8.png',
         'under9.png',
       ],
+    },
+  ];
+
+  financialblockall = [
+    {
+      text: 'Three basic financial statements',
+      list: [
+        'Profit and Loss (also known as P&L)',
+        'Cash Flow',
+        'Balance Sheet',
+      ],
+      image: 'image1.svg',
+      reverse: false,
+    },
+    {
+      image: 'image2.svg',
+      text: 'A monthly process to update the statements',
+      list: [
+        'Integrate with existing reports and departments',
+        'We suggest new flows and metrics where needed',
+        ' Your regular management process now feeds information into financial reports and forecasts',
+      ],
+      reverse: true,
+    },
+    {
+      text: 'Financial projections/planning',
+      list: [
+        'Based on your historical data and future plans, we build two versions of forecast which show the band of future possibilities',
+        'We update this forecast monthly/weekly',
+      ],
+      image: 'image3.svg',
+      reverse: false,
+    },
+    {
+      image: 'image4.svg',
+      text: 'Plan/Actual analysis',
+      list: [
+        'One of the most helpful processes and when conducted on monthly basis, allows to achieve high-precision forecasting',
+      ],
+      reverse: true,
+    },
+    {
+      text: 'Unit economics',
+      list: [
+        'Shows how your lifetime value (LTV) compares with your customer acquisition cost (CAC)',
+        'Allows for correct sales and marketing planning on daily- or per-campaign- basis',
+        '    Creates a framework to highlight non-obvious expenses that scale with user base growth',
+      ],
+      image: 'image5.svg',
+      reverse: false,
+    },
+    {
+      image: 'image6.svg',
+      text: 'Dashboards',
+      list: [
+        'Depending on your business model, we use best practices and recommend which KPIs you should be focused on',
+        'Fully customizable and tailored for you by your dedicated manager',
+      ],
+      reverse: true,
     },
   ];
 }
