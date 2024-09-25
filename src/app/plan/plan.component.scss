@@ -1,0 +1,155 @@
+$green: #07f968;
+
+h1 {
+  font-size: 100px;
+  line-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.elements {
+  box-sizing: content-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(18 18 18);
+  margin-right: 25px;
+}
+
+.column {
+  padding: 32px;
+
+  &:nth-child(2) {
+    border: 4px solid #07f968;
+    border-radius: 15px;
+  }
+}
+
+.button-get {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 32px 0;
+  color: black;
+}
+
+.essential-title {
+  line-height: 120%;
+  font-size: 48px;
+}
+
+.essential {
+  /* width: 440px;*/
+  margin-right: 24px;
+  /* padding: 32px;*/
+}
+
+.growth-title {
+  line-height: 120%;
+  font-size: 48px;
+  color: #07f968;
+}
+
+.growth {
+  /* width: 440px;*/
+  margin-right: 24px;
+  /*padding: 32px;*/
+}
+
+.custom-title {
+  line-height: 120%;
+  font-size: 48px;
+}
+
+.custom {
+  /* width: 440px;*/
+  margin-right: 24px;
+  /* padding: 32px;*/
+}
+
+.custom-title {
+  line-height: 120%;
+  font-size: 48px;
+}
+
+.bootstrap {
+  img {
+    width: 150px;
+  }
+
+  .bootstrap-title {
+    display: block;
+    font-size: 28px;
+  }
+
+  span {
+    display: flex;
+    color: rgb(255 255 255 / 50%);
+  }
+
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 26px 64px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .bootstrap-button {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 32px;
+    color: black;
+  }
+}
+
+
+.simple-better {
+  display: flex;
+  margin: 0 -250px;
+}
+
+
+.author {
+  display: block;
+  width: 50%;
+  justify-content: space-between;
+
+  img {
+    border-radius: 20px;
+    width: 40px;
+  }
+}
+
+ul {
+  color: rgb(255 255 255 / 55%);
+  font-size: 15px;
+  line-height: 35px;
+  list-style-type: none;
+
+  li:before {
+    content: "✔";
+    padding-right: 5px;
+  }
+}
+
+.active {
+  .essential-title {
+    color: #07f968;
+  }
+
+  .button-get {
+    background-color: #07f968;
+  }
+}

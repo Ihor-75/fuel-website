@@ -1,0 +1,8 @@
+.plans {
+  display: flex;
+
+  app-plan:nth-child(2) {
+    border: 4px solid green;
+    border-radius: 7px;
+  }
+}

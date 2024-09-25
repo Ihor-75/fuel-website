@@ -1,0 +1,18 @@
+<div class="bootstrap">
+  <div class="bootstrap-img">
+    <img src="{{ config.image }}" alt="" />
+  </div>
+  <div class="bootstrap-text">
+    <div class="bootstrap-title">{{ config.header }}</div>
+    <div class="bootstrap-text1">
+      <p>
+        <span *ngFor="let item of config.list">{{ item }}</span>
+      </p>
+      <a href="{{ config.link.link }}">{{ config.link.text }}</a>
+    </div>
+  </div>
+  <div class="bootstrap-button">
+    <a href="{{ config.button.link }}">{{ config.button.text }}</a>
+  </div>
+</div>
+`

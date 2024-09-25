@@ -1,0 +1,13 @@
+<div class="essential column" [class.active]="config.active">
+  <p class="essential-title">{{ config.header }}</p>
+  <p class="essential-text">
+    {{ config.text }}
+  </p>
+  <p class="button-get">
+    <a href="{{ config.button.link }}">{{ config.button.text }}.</a>
+  </p>
+  <p></p>
+  <ul>
+    <li *ngFor="let item of config.list">{{ item }}</li>
+  </ul>
+</div>
