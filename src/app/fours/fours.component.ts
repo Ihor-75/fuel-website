@@ -1,17 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, importProvidersFrom } from '@angular/core';
 import { HowGetCardComponent } from '../how-get-card/how-get-card.component';
 import { CommonModule } from '@angular/common';
 import { NepaliDatepickerModule } from 'nepali-datepicker-angular';
 import { MaterialComponent } from '../material/material.component';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { ChangeDetectionStrategy } from '@angular/core';
+import {
+  MatNativeDateModule,
+  provideNativeDateAdapter,
+} from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-fours',
   standalone: true,
+  providers: [provideNativeDateAdapter(), provideAnimations()],
   imports: [
     HowGetCardComponent,
     CommonModule,
     NepaliDatepickerModule,
     MaterialComponent,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
   ],
   templateUrl: './fours.component.html',
   styleUrl: './fours.component.scss',
@@ -54,4 +73,6 @@ export class FoursComponent {
       ],
     },
   };
+  maxDate: any;
+  minDate: any;
 }
