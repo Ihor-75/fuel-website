@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { PricingComponent } from '../pricing/pricing.component';
 import { HowGetCardComponent } from '../how-get-card/how-get-card.component';
+import { NepaliDatepickerModule } from 'nepali-datepicker-angular';
 
 @Component({
   selector: 'app-third',
@@ -15,6 +16,7 @@ import { HowGetCardComponent } from '../how-get-card/how-get-card.component';
     PricingComponent,
     HowGetCardComponent,
     HowGetCardComponent,
+    NepaliDatepickerModule,
   ],
   templateUrl: './third.component.html',
   styleUrl: './third.component.scss',
