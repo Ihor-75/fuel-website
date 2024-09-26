@@ -23,7 +23,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '3',
+    redirectTo: '4',
     pathMatch: 'full',
   },
 ];

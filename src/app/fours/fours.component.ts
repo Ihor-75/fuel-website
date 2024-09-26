@@ -2,11 +2,17 @@ import { Component } from '@angular/core';
 import { HowGetCardComponent } from '../how-get-card/how-get-card.component';
 import { CommonModule } from '@angular/common';
 import { NepaliDatepickerModule } from 'nepali-datepicker-angular';
+import { MaterialComponent } from '../material/material.component';
 
 @Component({
   selector: 'app-fours',
   standalone: true,
-  imports: [HowGetCardComponent, CommonModule, NepaliDatepickerModule],
+  imports: [
+    HowGetCardComponent,
+    CommonModule,
+    NepaliDatepickerModule,
+    MaterialComponent,
+  ],
   templateUrl: './fours.component.html',
   styleUrl: './fours.component.scss',
 })
