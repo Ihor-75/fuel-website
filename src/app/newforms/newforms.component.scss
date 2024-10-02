@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 10vw 20vw;
+  background-color: rgb(78, 216, 168);
+  border-radius: 15px;
+  margin: 2vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 350px;
+  margin: 10px auto;
+}

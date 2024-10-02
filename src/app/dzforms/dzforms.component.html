@@ -1,0 +1,133 @@
+<div class="wrapper">
+  <!--   імя: string = '';
+  прізвище: string = '';
+
+  номер_телефону: string = '';
+  email: string = '';
+  пароль: string = '';
+
+  Дата_народження: Date | null = null;
+  вік: number = 0;
+  стать: string = '';
+
+  спосіб_доставки: string = '';
+  місто: string = '';
+  адреса: string = ''; -->
+
+  <form class="form">
+    <table class="example-full-width">
+      <tbody>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>імя</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>прізвище</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <mat-form-field>
+      <mat-label>номер_телефону</mat-label>
+      <span matTextPrefix>+38 &nbsp;</span>
+      <input type="tel" matInput placeholder="97-63-72-033" />
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>email</mat-label>
+      <input
+        type="email"
+        matInput
+        [formControl]="emailFormControl"
+        placeholder="Ex. pat@example.com"
+      />
+      @if (emailFormControl.hasError('email') &&
+      !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid email address</mat-error>
+      } @if (emailFormControl.hasError('required')) {
+      <mat-error>Email is <strong>required</strong></mat-error>
+      }
+    </mat-form-field>
+    <!--    <mat-form-field>
+      <mat-label>пароль</mat-label>
+      <input type="password" matInput />
+    </mat-form-field> -->
+    <mat-form-field>
+      <mat-label>пароль</mat-label>
+      <input matInput [type]="hide() ? 'password' : 'text'" />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{ hide() ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <!--     <mat-form-field>
+      <mat-label>Дата_народження</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field> -->
+
+    <mat-form-field>
+      <mat-label>стать</mat-label>
+      <select matNativeControl>
+        <option value="Чоловіча">Чоловіча</option>
+        <option value="Жіноча">Жіноча</option>
+        <option value="Невизначено">Невизначено</option>
+      </select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>спосіб_доставки</mat-label>
+      <select matNativeControl>
+        <option value="Доставка курєром Нової пошти">
+          Доставка курєром Нової пошти
+        </option>
+        <option value="Доставка в поштомат Нової пошти">
+          Доставка в поштомат Нової пошти
+        </option>
+        <option value="Доставка у відділення Нової пошти">
+          Доставка у відділення Нової пошти
+        </option>
+      </select>
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>місто</mat-label>
+            <input matInput placeholder="Самбір" />
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>адреса</mat-label>
+            <input matInput placeholder="вул. І.Франка" />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <button type="button" mat-flat-button color="assent">Відмінити</button>
+
+    <button type="submit" mat-flat-button color="primary">
+      Створити акаунт
+    </button>
+  </form>
+</div>

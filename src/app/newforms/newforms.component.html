@@ -1,0 +1,136 @@
+<div class="wrapper">
+  <!--   firstName = ''; LastName = ''; email = ''; phone = ''; birthday: Date | null =
+  null; age: number = 0; aboutYourself = ''; password = ''; sex = ''; country =
+  ''; -->
+
+  <form class="form">
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input
+        matInput
+        placeholder="First Name"
+        name="firstName"
+        [(ngModel)]="firstName"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input
+        matInput
+        placeholder="Last Name"
+        name="LasttName"
+        [(ngModel)]="LastName"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        [formControl]="emailFormControl"
+        placeholder="Ex. pat@example.com"
+        name="email"
+        [(ngModel)]="email"
+      />
+      @if (emailFormControl.hasError('email') &&
+      !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid email address</mat-error>
+      } @if (emailFormControl.hasError('required')) {
+      <mat-error>Email is <strong>required</strong></mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Phone</mat-label>
+      <span matTextPrefix>+38 &nbsp;</span>
+      <input
+        type="tel"
+        matInput
+        placeholder="097-6372-033"
+        name="phone"
+        [(ngModel)]="phone"
+      />
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter your password</mat-label>
+      <input
+        matInput
+        [type]="hide() ? 'password' : 'text'"
+        name="password"
+        [(ngModel)]="password"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{ hide() ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Choose a birthday</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        name="birthday"
+        [(ngModel)]="birthday"
+      />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Country</mat-label>
+      <mat-select name="country" [(ngModel)]="country">
+        <mat-option>None</mat-option>
+        @for (country of countries; track country) {
+        <mat-option [value]="country">{{ country }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Select your sex</mat-label>
+      <select matNativeControl required name="sex" [(ngModel)]="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>About yourself</mat-label>
+      <textarea
+        rows="9"
+        matInput
+        placeholder="Tell me about yourself"
+        name="aboutYourself"
+        [(ngModel)]="aboutYourself"
+      ></textarea>
+    </mat-form-field>
+
+    <button id="cancel" type="button" mat-flat-button color="accent">
+      Cancel
+    </button>
+    <button
+      id="create"
+      type="submit"
+      mat-flat-button
+      color="primary"
+      (click)="showAllVariables()"
+    >
+      Create account
+    </button>
+  </form>
+</div>

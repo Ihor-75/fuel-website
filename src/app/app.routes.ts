@@ -21,6 +21,7 @@ export const routes: Routes = [
     path: '4',
     component: FoursComponent,
   },
+
   {
     path: '',
     redirectTo: '4',
