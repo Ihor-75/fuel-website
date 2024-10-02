@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
 import { HeaderComponent } from './../header/header.component';
 import { PowerfulComponent } from '../powerful/powerful.component';
@@ -21,6 +22,7 @@ import { IconsSpreadsheetsComponent } from '../icons-spreadsheets/icons-spreadsh
     IconsIntegrationsComponent,
     IconsSecurityComponent,
     IconsSpreadsheetsComponent,
+    RouterModule,
   ],
   templateUrl: './second.component.html',
   styleUrl: './second.component.scss',

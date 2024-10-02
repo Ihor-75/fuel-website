@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderHoverBlockComponent } from '../header-hover-block/header-hover-block.component';
 import { text } from 'stream/consumers';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, HeaderHoverBlockComponent],
+  imports: [CommonModule, HeaderHoverBlockComponent, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

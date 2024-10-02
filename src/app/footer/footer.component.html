@@ -2,7 +2,13 @@
   <div class="row">
     <ul *ngFor="let list of pageall">
       <h3>{{ list.footer }}</h3>
-      <li *ngFor="let item of list.list">{{ item }}</li>
+      <li
+        [routerLink]="['/products']"
+        [routerLink]="['/pricing']"
+        *ngFor="let item of list.list"
+      >
+        {{ item }}
+      </li>
     </ul>
   </div>
   <div class="row">

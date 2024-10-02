@@ -10,6 +10,7 @@ import { ChangeDetectionStrategy, signal } from '@angular/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { provideNativeDateAdapter } from '@angular/material/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-newforms',
@@ -25,6 +26,7 @@ import { provideNativeDateAdapter } from '@angular/material/core';
     MatButtonModule,
     MatSelectModule,
     MatDatepickerModule,
+    RouterModule,
   ],
   templateUrl: './newforms.component.html',
   styleUrl: './newforms.component.scss',
