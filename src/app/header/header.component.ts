@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderHoverBlockComponent } from '../header-hover-block/header-hover-block.component';
 import { text } from 'stream/consumers';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -47,5 +47,12 @@ export class HeaderComponent {
   }
   closeBlock(block: number) {
     this.blocksOpen[block] = false;
+  }
+  constructor(private router: Router) {}
+  openPricingPage() {
+    this.router.navigate(['/book a demo']);
+  }
+  openFormgPage() {
+    this.router.navigate(['/form']);
   }
 }

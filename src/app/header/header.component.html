@@ -4,7 +4,7 @@
   </div>
 
   <ul>
-    <li [routerLink]="['/products']">Products</li>
+    <li [routerLink]="['/e-commerce']">Products</li>
     <li
       class="inner-block"
       (mouseenter)="openBlock(0)"
@@ -14,6 +14,8 @@
       <app-header-hover-block *ngIf="blocksOpen[0]" [config]="blockall[0]">
       </app-header-hover-block>
     </li>
+    <li (click)="openPricingPage()">Products1</li>
+    <li (click)="openFormgPage()">newsForm</li>
     <li [routerLink]="['/pricing']">Pricing</li>
     <li
       class="inner-block"

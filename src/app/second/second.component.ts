@@ -1,4 +1,4 @@
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
 import { HeaderComponent } from './../header/header.component';
 import { PowerfulComponent } from '../powerful/powerful.component';
@@ -28,6 +28,7 @@ import { IconsSpreadsheetsComponent } from '../icons-spreadsheets/icons-spreadsh
   styleUrl: './second.component.scss',
 })
 export class SecondComponent {
+  [x: string]: any;
   pageobject = {
     header: 'Products',
     list: [

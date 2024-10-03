@@ -5,6 +5,11 @@ import { ThirdComponent } from './third/third.component';
 import { FoursComponent } from './fours/fours.component';
 import { HeaderComponent } from './header/header.component';
 import { NewformsComponent } from './newforms/newforms.component';
+import { PlanComponent } from './plan/plan.component';
+import { FormComponent } from './form/form.component';
+import { FooterComponent } from './footer/footer.component';
+import { UnivaComponent } from './univa/univa.component';
+import { PaswordUnivaComponent } from './pasword-univa/pasword-univa.component';
 
 export const routes: Routes = [
   {
@@ -20,17 +25,24 @@ export const routes: Routes = [
     component: ThirdComponent,
   },
   {
-    path: 'header',
+    path: 'book a demo',
     component: FoursComponent,
   },
   {
-    path: 'header',
-    component: HeaderComponent,
+    path: 'form',
+    component: FooterComponent,
   },
-
+  {
+    path: 'univa',
+    component: UnivaComponent,
+  },
+  {
+    path: 'pasword-univa',
+    component: PaswordUnivaComponent,
+  },
   {
     path: '',
-    redirectTo: 'e-commerce',
+    redirectTo: 'univa',
     pathMatch: 'full',
   },
 ];
