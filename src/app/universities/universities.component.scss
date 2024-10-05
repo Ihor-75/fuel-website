@@ -1,0 +1,29 @@
+.lern {
+  font-size: 25px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 20px;
+  line-height: 35px;
+}
+
+p {
+  font-size: 50px;
+  color: white;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 35px;
+  border-bottom: 3px solid#07f968;
+}
+
+li a {
+  color: #07f968;
+  margin-left: 40px;
+}
+
+a:hover {
+  background-color: #66b586;
+  cursor: pointer;
+}

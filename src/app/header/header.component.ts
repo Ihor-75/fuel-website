@@ -53,6 +53,6 @@ export class HeaderComponent {
     this.router.navigate(['/book a demo']);
   }
   openFormgPage() {
-    this.router.navigate(['/form']);
+    this.router.navigate(['/universities']);
   }
 }

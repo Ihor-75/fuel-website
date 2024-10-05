@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
 import { UnivaComponent } from './univa/univa.component';
 import { PaswordUnivaComponent } from './pasword-univa/pasword-univa.component';
+import { UniversitiesComponent } from './universities/universities.component';
 
 export const routes: Routes = [
   {
@@ -33,6 +34,10 @@ export const routes: Routes = [
     component: FooterComponent,
   },
   {
+    path: 'universities',
+    component: UniversitiesComponent,
+  },
+  {
     path: 'univa',
     component: UnivaComponent,
   },
@@ -42,7 +47,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'univa',
+    redirectTo: 'e-commerce',
     pathMatch: 'full',
   },
 ];
