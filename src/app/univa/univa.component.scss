@@ -13,16 +13,16 @@
 }
 
 .login-box {
-  background-color: #f4f3f3;
+  background-color: #000000;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  box-shadow: 0 4px 8px #07f968;
   text-align: center;
-  width: 400px;
+  width: 500px;
 }
 
 .logo {
-  width: 120px;
+  width: 200px;
   margin-bottom: 20px;
 }
 
@@ -37,19 +37,20 @@ form {
 }
 
 label {
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   margin-bottom: 5px;
+  color: white;
 }
 
 input {
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 3px solid #000000;
   border-radius: 10px;
   font-size: 16px;
   color: black;
-  background-color: white;
+  background-color: #07f968;
 }
 
 input:focus {
@@ -58,8 +59,8 @@ input:focus {
 }
 
 .submit-btn {
-  background-color: #a0a5b1;
-  color: rgb(29, 27, 27);
+  background-color: #07f968;
+  color: #65bf89;
   padding: 10px;
   border: none;
   border-radius: 9px;
@@ -79,7 +80,7 @@ a {
   display: block;
   margin-top: 20px;
   font-size: 15px;
-  color: #4a90e2;
+  color: #07f968;
   text-decoration: none;
 }
 
