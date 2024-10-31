@@ -11,6 +11,10 @@ import { FooterComponent } from './footer/footer.component';
 import { UnivaComponent } from './univa/univa.component';
 import { PaswordUnivaComponent } from './pasword-univa/pasword-univa.component';
 import { UniversitiesComponent } from './universities/universities.component';
+import { BookBlockComponent } from './book-block/book-block.component';
+import { BookReadyComponent } from './book-ready/book-ready.component';
+import { BoolCallComponent } from './book-call/book-call.component';
+import { BookIconComponent } from './book-icon/book-icon.component';
 
 export const routes: Routes = [
   {
@@ -46,8 +50,16 @@ export const routes: Routes = [
     component: PaswordUnivaComponent,
   },
   {
+    path: 'book-a-demo',
+    component: BookBlockComponent,
+  },
+  {
+    path: '88',
+    component: BookIconComponent,
+  },
+  {
     path: '',
-    redirectTo: 'e-commerce',
+    redirectTo: 'book-a-demo',
     pathMatch: 'full',
   },
 ];

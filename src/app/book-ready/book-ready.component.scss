@@ -1,0 +1,33 @@
+.growth {
+  background-color: rgb(42 42 42);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+.growth h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.growth p {
+  margin-bottom: 20px;
+  color: rgb(135, 143, 150);
+}
+
+.growth ul {
+  list-style-type: none;
+}
+
+.growth ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.growth ul li::before {
+  content: '✔';
+  color: #00ff00;
+}

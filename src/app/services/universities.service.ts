@@ -7,9 +7,10 @@ import { Injectable } from '@angular/core';
 export class UniversitiesService {
   constructor(private http: HttpClient) {}
 
-  getUniversities() {
+  getUniversitiesBycountry(country: string = 'ukraine') {
+    console.log('getUniversitiesBycountry' + country);
     return this.http.get(
-      'http://universities.hipolabs.com/search?&country=ukraine'
+      'http://universities.hipolabs.com/search?&country=' + country
     );
   }
 }
