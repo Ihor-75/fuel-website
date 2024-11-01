@@ -1,9 +1,29 @@
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .bg-color {
   background-color: black;
   color: white;
+}
+
+.wrapper {
+  padding-right: 550px;
+
+}
+
+.colum {
+  display: flex;
+  justify-content: space-between;
+
+  app-book-ready {
+    width: 60%;
+    display: block;
+  }
+}
+
+app-footer {
+  margin-top: 1000px;
+  display: block;
 }

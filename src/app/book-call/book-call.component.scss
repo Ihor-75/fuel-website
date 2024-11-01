@@ -90,6 +90,11 @@ a {
 .call {
   margin-top: 20px;
   display: flex;
+  position: sticky;
+  top: 80px;
+  right: 5px;
+
+
 }
 
 .call-content {
