@@ -15,6 +15,7 @@ import { BookBlockComponent } from './book-block/book-block.component';
 import { BookReadyComponent } from './book-ready/book-ready.component';
 import { BoolCallComponent } from './book-call/book-call.component';
 import { BookIconComponent } from './book-icon/book-icon.component';
+import { FontStyleComponent } from './font-style/font-style.component';
 
 export const routes: Routes = [
   {
@@ -58,8 +59,12 @@ export const routes: Routes = [
     component: BookIconComponent,
   },
   {
+    path: 'font-style',
+    component: FontStyleComponent,
+  },
+  {
     path: '',
-    redirectTo: 'book-a-demo',
+    redirectTo: 'font-style',
     pathMatch: 'full',
   },
 ];

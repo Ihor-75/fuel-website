@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <form class="colum">
+    <h6>Форма</h6>
+    <label>Введіть Font-size: {{ fontSize }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Font-size"
+      name="Font-size"
+      [(ngModel)]="fontSize"
+    />
+
+    <label>Введіть Font-weight: {{ fontWeight }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Font-weight"
+      name="Font-weight"
+      [(ngModel)]="fontWeight"
+    />
+
+    <label>Введіть Font-style: {{ fontStyle }} </label>
+    <input
+      type="text"
+      placeholder="Введіть Font-style"
+      name="Font-style"
+      [(ngModel)]="fontStyle"
+    />
+    <label>Введіть Font-color: {{ fontColor }} </label>
+    <input
+      type="text"
+      placeholder="Введіть Font-color"
+      name="Font-color"
+      [(ngModel)]="fontColor"
+    />
+  </form>
+  <div class="result">
+    <div
+      class="block"
+      [style.fontSize]="fontSize"
+      [style.fontWeight]="fontWeight"
+      [style.fontStyle]="fontStyle"
+    >
+      <p>
+        Свою Україну любіть. Любіть її… во врем'я люте, В остатню, тяжкую мінуту
+        За неї Господа моліть.
+      </p>
+    </div>
+  </div>
+</div>
