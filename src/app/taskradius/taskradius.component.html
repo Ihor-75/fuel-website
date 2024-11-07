@@ -9,7 +9,12 @@
 
   <div class="result">
     <div class="block">
-      <div class="child-block" *ngIf="R" [style.width]="R + 'px'">
+      <div
+        class="child-block"
+        *ngIf="R"
+        [style.width]="R + 'px'"
+        [style.height]="R + 'px'"
+      >
         <span class="R">{{ R || "R" }}</span>
       </div>
       <h6 *ngIf="R">Площа кола: {{ area }}</h6>
