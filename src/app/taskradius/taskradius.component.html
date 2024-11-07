@@ -1,0 +1,46 @@
+<!-- <div class="wrapper">
+    довжина: С=2ПR
+  площа:ПR^2
+  <form class="colum">
+    <h6>Розрахунок площі і довжини кола</h6>
+    <label>Введіть R: </label>
+    <input type="number" placeholder="R" name="R" [(ngModel)]="R" />
+  </form>
+
+  <div class="result">
+    <div class="block">
+      <div class="child-block" *ngIf="R" [style.width]="R + 'px'">
+        <span class="R">{{ R || "R" }}</span>
+        <h6 *ngIf="R">Площа: {{ area }}</h6>
+        <h6 *ngIf="R">Довжина: {{ length }}</h6>
+
+        <p *ngIf="!R">Для обрахунку площі - ввудіть R</p>
+        <p *ngIf="!R">Для обрахунку довжини - ввудіть R</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="wrapper">
+  <form class="column form">
+    <h6>Параметры окружности</h6>
+
+    <label>Введіть радіус (r):</label>
+    <input type="number" placeholder="r" name="r" [(ngModel)]="r" />
+  </form>
+
+  <div class="result">
+    <div class="block">
+      <div class="child-block" *ngIf="r">
+        <span class="label">Радіус:</span>
+        <span class="value">{{ r || "r" }}</span>
+      </div>
+    </div>
+
+    <h6 *ngIf="r">Результати</h6>
+    <p *ngIf="r">Площа круга: {{ area }} кв. од.</p>
+    <p *ngIf="r">Довжина кола: {{ circumference }} од.</p>
+
+    <!-- Сообщение, если значение радиуса отсутствует -->
+    <p *ngIf="!r">Для обрахунку площі та довжини кола - введіть радіус</p>
+  </div>
+</div>

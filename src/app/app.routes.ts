@@ -16,6 +16,8 @@ import { BookReadyComponent } from './book-ready/book-ready.component';
 import { BoolCallComponent } from './book-call/book-call.component';
 import { BookIconComponent } from './book-icon/book-icon.component';
 import { FontStyleComponent } from './font-style/font-style.component';
+import { ResumeComponent } from './resume/resume.component';
+import { TaskradiusComponent } from './taskradius/taskradius.component';
 
 export const routes: Routes = [
   {
@@ -63,8 +65,16 @@ export const routes: Routes = [
     component: FontStyleComponent,
   },
   {
+    path: 'resume',
+    component: ResumeComponent,
+  },
+  {
+    path: 'taskradius',
+    component: TaskradiusComponent,
+  },
+  {
     path: '',
-    redirectTo: 'font-style',
+    redirectTo: 'taskradius',
     pathMatch: 'full',
   },
 ];

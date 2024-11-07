@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 35px;
+
 
   form {
     background-color: #494040;
@@ -35,7 +37,7 @@
   .result {
     background-color: blue;
     width: 400px;
-    height: 466px;
+    height: 600px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -50,6 +52,15 @@
       align-items: center;
       justify-content: center;
     }
+
+  }
+
+  .task {
+    background-color: #923939;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #0b0a0a;
 
   }
 

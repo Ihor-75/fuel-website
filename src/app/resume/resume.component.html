@@ -1,0 +1,102 @@
+<div class="wrapper">
+  <form class="colum">
+    <h6>Резюме</h6>
+    <label>Введіть імя: </label>
+    <input
+      type="text"
+      placeholder="Введіть імя"
+      name="firstName"
+      [(ngModel)]="person.firstName"
+    />
+
+    <label>Введіть прізвище: </label>
+    <input
+      type="text"
+      placeholder="Введіть прізвище"
+      name="sureName"
+      [(ngModel)]="person.sureName"
+    />
+
+    <label>Який ваш вік: </label>
+    <input
+      type="number"
+      placeholder=" Вік"
+      name="age"
+      [(ngModel)]="person.age"
+    />
+    <label>Дата народження: </label>
+    <input
+      type="date"
+      placeholder=" Дата народження"
+      name="dateOfBirth"
+      [(ngModel)]="person.dateOfBirth"
+    />
+
+    <label>Вставте посилання на вашу картинку:</label>
+    <input
+      type="text"
+      placeholder="Вставте посилання "
+      name="avatar"
+      [(ngModel)]="person.avatar"
+    />
+    <label>Вставте посилання на відео:</label>
+    <input
+      type="url"
+      placeholder="Вставте посилання "
+      name="videoLink"
+      [(ngModel)]="person.videoLink"
+    />
+    <label>Напишіть про себе 5 речень: </label>
+    <textarea
+      name="aboutYourself"
+      placeholder=" Про себе "
+      [(ngModel)]="person.aboutYourself"
+      rows="5"
+      cols="40"
+    ></textarea>
+  </form>
+  <div class="result">
+    <div class="block">
+      <h2>{{ person.firstName }} {{ person.sureName }}</h2>
+      <h6 *ngIf="person.age">Вік: {{ person.age }}</h6>
+      <h6 *ngIf="person.dateOfBirth">
+        Дата народження: {{ person.dateOfBirth }}
+      </h6>
+
+      <img *ngIf="person.avatar" [src]="person.avatar" alt="Avatar" />
+      <div *ngIf="person.videoLink">
+        <iframe [src]="person.videoLink"></iframe>
+      </div>
+      <p>
+        {{ person.aboutYourself }}
+      </p>
+      <!--  <a [href]="linkHref">{{ linkText }}</a>
+      <img [src]="imageSrc" alt="{{ imageSrc }}" /> -->
+    </div>
+  </div>
+
+  <!--   <form class="task">
+    <h6>Додаткове завдання</h6>
+    <label>Введіть Text : {{ linkText }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Text"
+      name="Text"
+      [(ngModel)]="linkText"
+    />
+    <label>Введіть Link Href : {{ linkHref }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Link Href"
+      name="Text"
+      [(ngModel)]="linkHref"
+    />
+    <label>Введіть Image Src : {{ imageSrc }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Image Src"
+      name="Text"
+      [(ngModel)]="imageSrc"
+    />
+  </form> -->
+</div>

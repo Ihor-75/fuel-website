@@ -24,12 +24,12 @@
       name="Font-style"
       [(ngModel)]="fontStyle"
     />
-    <label>Введіть Font-color: {{ fontColor }} </label>
+    <label>Введіть Font-color: {{ color }} </label>
     <input
       type="text"
       placeholder="Введіть Font-color"
       name="Font-color"
-      [(ngModel)]="fontColor"
+      [(ngModel)]="color"
     />
   </form>
   <div class="result">
@@ -38,11 +38,39 @@
       [style.fontSize]="fontSize"
       [style.fontWeight]="fontWeight"
       [style.fontStyle]="fontStyle"
+      [style.color]="color"
     >
       <p>
         Свою Україну любіть. Любіть її… во врем'я люте, В остатню, тяжкую мінуту
         За неї Господа моліть.
       </p>
+      <a [href]="linkHref">{{ linkText }}</a>
+      <img [src]="imageSrc" alt="{{ imageSrc }}" />
     </div>
   </div>
+
+  <form class="task">
+    <h6>Додаткове завдання</h6>
+    <label>Введіть Text : {{ linkText }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Text"
+      name="Text"
+      [(ngModel)]="linkText"
+    />
+    <label>Введіть Link Href : {{ linkHref }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Link Href"
+      name="Text"
+      [(ngModel)]="linkHref"
+    />
+    <label>Введіть Image Src : {{ imageSrc }}</label>
+    <input
+      type="text"
+      placeholder="Введіть Image Src"
+      name="Text"
+      [(ngModel)]="imageSrc"
+    />
+  </form>
 </div>
