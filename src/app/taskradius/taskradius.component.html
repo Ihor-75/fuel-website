@@ -4,26 +4,36 @@
   <form class="colum">
     <h6>Розрахунок площі і довжини кола</h6>
     <label>Введіть R: </label>
-    <input type="number" placeholder="R" name="R" [(ngModel)]="R" />
+    <input
+      type="number"
+      placeholder="R"
+      name="R"
+      min="1"
+      max="250"
+      [(ngModel)]="R"
+    />
+
+    <p *ngIf="R <= 0 && R !== null">Радіус не може бути меншим або рівним 0</p>
+    <p *ngIf="!R">Для обрахунку площі - ввeдіть R</p>
+    <p *ngIf="!R">Для обрахунку довжини - ввeдіть R</p>
+
+    <button (click)="calculateAreaLenght()" [disabled]="!R">Порахувати</button>
   </form>
 
   <div class="result">
     <div class="block">
       <div
         class="child-block"
-        *ngIf="R"
+        *ngIf="area && length"
         [style.width]="R + 'px'"
         [style.height]="R + 'px'"
       >
-        <span class="R">{{ R || "R" }}</span>
+        <span class="R">{{ this.diametr }}</span>
+        <span class="diametr"></span>
       </div>
       <h6 *ngIf="R">Площа кола: {{ area }}</h6>
       <h6 *ngIf="R">Довжина кола: {{ length }}</h6>
-      <p *ngIf="R <= 0 && R !== null">
-        Радіус не може бути меншим або рівним 0
-      </p>
-      <p *ngIf="!R">Для обрахунку площі - ввeдіть R</p>
-      <p *ngIf="!R">Для обрахунку довжини - ввeдіть R</p>
+      <h6 *ngIf="R">Діаметр кола: {{ diametr }}</h6>
     </div>
   </div>
 </div>

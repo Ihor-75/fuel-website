@@ -28,6 +28,11 @@
       font-size: 1.2em;
       border-radius: 20px;
       padding: 15px;
+      border: 6px solid rgb(0, 255, 68);
+
+      &.ng-invalid {
+        border: 6px solid rgb(209, 13, 13);
+      }
     }
   }
 
@@ -53,10 +58,26 @@
 
         position: relative;
 
+        .diametr {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background-color: #0a0a0a;
+
+
+
+        }
+
         .R {
           position: absolute;
-          top: 60%;
-          color: #222;
+          top: 40%;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: black
         }
 
         .h6 {
@@ -77,9 +98,27 @@ h6 {
   font-weight: bold;
   margin-top: 10px;
   line-height: 1.4em;
+  margin-top: 20px;
 }
 
 p {
   line-height: 1.4em;
   font-style: italic;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(146, 52, 218);
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+
+  &:disabled {
+    opacity: 0.5;
+    filter: grayscale(100%);
+
+  }
 }

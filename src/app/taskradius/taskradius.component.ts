@@ -20,11 +20,15 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class TaskradiusComponent {
   R: number = 0;
+  area: number = 0;
+  length: number = 0;
+  diametr: number = 0;
 
-  get area() {
-    return this.R && this.R > 0 ? this.R * this.R * Math.PI : 0;
-  }
-  get length() {
-    return this.R && this.R > 0 ? 2 * this.R * Math.PI : 0;
+  calculateAreaLenght() {
+    this.area = Math.round(
+      this.R && this.R > 0 ? this.R * this.R * Math.PI : 0
+    );
+    this.length = Math.round(this.R && this.R > 0 ? 2 * this.R * Math.PI : 0);
+    this.diametr = this.R && this.R > 0 ? 2 * this.R : 0;
   }
 }
