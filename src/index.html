@@ -1,26 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FuelKr</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-<head>
-  <meta charset="utf-8">
-  <title>FuelKr</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="mat-typography">
+    <app-root></app-root>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+    <script>
+      const a = 8;
+      const b = 3;
+      const R = 11;
+      const calculateArea = () => {
+        const area = a * b;
+      };
 
-<body class="mat-typography">
-  <app-root></app-root>
-</body>
+      console.log("----ORP-----------------------");
 
+      /*     class Square {
+        area = 0;
+        a = 0;
+        b = 0;
+
+        constructor(a, b) {
+          this.a = a;
+          this.b = b;
+        }
+
+        showArea() {
+          console.log("OPR   Area:" + this.area);
+        }
+      }
+
+      class calculateAlgotythm {
+        square;
+
+        constructor(square) {
+          this.square = square;
+        }
+        calculate() {
+          return this.square.a * this.square.b;
+        }
+      }
+      const squareObject = new Square(a, b);
+      const algorythmObject = new calculateAlgotythm(squareObject);
+
+      squareObject.area = algorythmObject.calculate();
+      squareObject.showArea();
+
+      console.log("---------------------------"); */
+      class Circle {
+        R = 0;
+        area = 0;
+        length = 0;
+        diametr = 0;
+
+        constructor(R) {
+          this.R = R;
+        }
+
+        showArea() {
+          console.log("OPR   Area:" + this.area);
+        }
+        showLenght() {
+          console.log("OPR   Lenght:" + this.length);
+        }
+        showDiametr() {
+          console.log("OPR   Diametr:" + this.diametr);
+        }
+      }
+
+      class CalculateCircleArea {
+        circle;
+
+        constructor(circle) {
+          this.circle = circle;
+        }
+        calculate() {
+          return this.circle.R * this.circle.R * Math.PI;
+        }
+      }
+      class CalculateCircleLenght {
+        circle;
+
+        constructor(circle) {
+          this.circle = circle;
+        }
+        calculate() {
+          return 2 * this.circle.R * Math.PI;
+        }
+      }
+      class CalculateCircleDiametr {
+        circle;
+
+        constructor(circle) {
+          this.circle = circle;
+        }
+        calculate() {
+          return this.circle.R * 2;
+        }
+      }
+
+      const circleObject = new Circle(R);
+
+      const circleAreaObject = new CalculateCircleArea(circleObject);
+      circleObject.area = circleAreaObject.calculate();
+      circleObject.showArea();
+
+      const circleLenghtObject = new CalculateCircleLenght(circleObject);
+      circleObject.length = circleLenghtObject.calculate();
+      circleObject.showLenght();
+
+      const circDiametrObject = new CalculateCircleDiametr(circleObject);
+      circleObject.diametr = circDiametrObject.calculate();
+      circleObject.showDiametr();
+
+      console.log("---------------------------");
+    </script>
+  </body>
 </html>

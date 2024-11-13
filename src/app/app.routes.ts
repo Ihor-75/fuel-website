@@ -18,6 +18,7 @@ import { BookIconComponent } from './book-icon/book-icon.component';
 import { FontStyleComponent } from './font-style/font-style.component';
 import { ResumeComponent } from './resume/resume.component';
 import { TaskradiusComponent } from './taskradius/taskradius.component';
+import { LectionComponent } from './lection/lection.component';
 
 export const routes: Routes = [
   {
@@ -73,8 +74,12 @@ export const routes: Routes = [
     component: TaskradiusComponent,
   },
   {
+    path: 'lection',
+    component: LectionComponent,
+  },
+  {
     path: '',
-    redirectTo: 'taskradius',
+    redirectTo: 'lection',
     pathMatch: 'full',
   },
 ];

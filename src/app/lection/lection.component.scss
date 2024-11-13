@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(181, 138, 82);
+  color: black;
+}
+
+.field {
+  position: relative;
+}
+
+.field__label {
+  position: absolute;
+  top: 0.25em;
+  left: 4px;
+  font-size: 1em;
+  color: rgb(203, 15, 15);
+  transition-duration: 0.2s;
+
+}
+
+.field__input:not(:placeholder-shown)+.field__label {
+  color: rgb(78, 208, 42);
+  scale: 0.7;
+  translate: -0.5em -1.2em;
+  font-size: 2em;
+
+}
+
+.field__input {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.box {
+  border-radius: 10px;
+  margin-left: 100px;
+  background-color: black;
+  width: 500px;
+  aspect-ratio: 16/2;
+}
+
+/* .slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+} */
