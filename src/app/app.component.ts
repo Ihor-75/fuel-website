@@ -17,6 +17,7 @@ export class AppComponent {
   title = 'fuel-kr';
   constructor() {
     console.log('---------------------------------/n');
+    console.log('----Day---1----------/n');
 
     const numbers = [1, 2, 3, 4, 5, 6, 10, 11, 15, 20];
     console.log('filterEvenNumbers', this.filterEvenNumbers(numbers));
@@ -83,6 +84,36 @@ export class AppComponent {
 
     const numbers7 = [10, 20, 30];
     console.log('objectId', this.objectId(numbers7));
+    console.log('----Day---1----------/n');
+
+    console.log('----Day---2---with---if---else--------/n');
+    const numbers10 = [5, 12, 25, 8, 15, 30];
+    //вивести результат: ['small','medium' , 'large' , 'small' , 'medium','large']
+    console.log('filterSizeNumber', this.filterSizeNumber(numbers10));
+
+    const numbers11 = [2, 11, 5, 18, 9, 21, 6, 7];
+    //вивести результат: [2, 11,9]
+    // Використай Filter та залищ тільки ті числа які є непарні та більше 10 або парні та менше 10
+    console.log('oddGretterNumber', this.oddGretterNumber(numbers11));
+
+    //Є масив чисел використай ForEach,щоб підрахувати кількість позитивниї і негативних чисел окремо.Використай if/else
+    const numbers12 = [-5, 3, -2, 8, 0, -1, 7, -6];
+    console.log(
+      'numbersPositiveNegative',
+      this.numbersPositiveNegative(numbers12)
+    );
+    //Є масив обєктів із віком лююдуй.Використай map,щоб додати категорії 'child' для віку до 12 'teenager' для віку від 13 до 19,'adult' для віку від 20.
+    const people2 = [
+      { name: 'Anna', age: 10 },
+      { name: 'Oleg', age: 16 },
+      { name: 'Ivan', age: 25 },
+    ];
+    console.log('divisionPeople', this.divisionPeople(people2));
+    //Є масив рядків.Використай foreach i if/else щоб розділити рядки на два нові масиви.Один масив з рядками довжиною більше 5 символів, інший з рядками менше 5 символів.
+    const words10 = ['cat', 'apple', 'banana', 'dog', 'fruit'];
+    console.log('filterWordsLenght', this.filterWordsLenght(words10));
+
+    console.log('----Day---2---with---if---else--------/n');
 
     console.log('---------------------------------/n');
   }
@@ -96,7 +127,7 @@ export class AppComponent {
     return products.map((product) => `${product.name}: ${product.price} $`);
   }
 
-  sumaNumber(numbers: number[]): number {
+  sumaNumber(numbers: number[]) {
     let suma = 0;
     numbers.forEach((num: number) => {
       suma += num;
@@ -117,7 +148,7 @@ export class AppComponent {
     arr.push(10);
     return arr;
   } */
-  addedNumber(arr: number[]): number[] {
+  addedNumber(arr: number[]) {
     for (let i = 1; i <= 10; i++) {
       arr.push(i);
     }
@@ -177,6 +208,83 @@ export class AppComponent {
       value: value,
     }));
   }
+
+  filterSizeNumber(numbers10: number[]) {
+    const categories = {
+      small: [] as number[],
+      medium: [] as number[],
+      large: [] as number[],
+    };
+    numbers10.map((num) => {
+      if (num < 10) {
+        categories.small.push(num);
+      } else if (num < 20) {
+        categories.medium.push(num);
+      } else {
+        categories.large.push(num);
+      }
+    });
+    return categories;
+  }
+  //numbers11 = [2, 11, 5, 18, 9, 21, 6, 7];
+  //вивести результат: [2, 11,9]
+  // Використай Filter та залищ тільки ті числа які є непарні та більше 10 або парні та менше 10
+  oddGretterNumber(numbers11: number[]) {
+    const filterNumbers = {
+      filterNumbers: [] as number[],
+    };
+    numbers11.filter((num) => {
+      if ((num % 2 !== 0 && num > 10) || (num % 2 === 0 && num < 10)) {
+        filterNumbers.filterNumbers.push(num);
+      }
+    });
+    return filterNumbers;
+  }
+  numbersPositiveNegative = (numbers12: number[]) => {
+    const categories = {
+      positive: [] as number[],
+      negative: [] as number[],
+    };
+    numbers12.forEach((num) => {
+      if (num < 0) {
+        categories.negative.push(num);
+      } else if (num > 0) {
+        categories.positive.push(num);
+      }
+    });
+    return categories;
+  };
+  divisionPeople = (people2: { name: string; age: number }[]) => {
+    const categories = {
+      child: [] as { name: string; age: number }[],
+      teenager: [] as { name: string; age: number }[],
+      adult: [] as { name: string; age: number }[],
+    };
+    people2.map((people2) => {
+      if (people2.age < 12) {
+        categories.child.push(people2);
+      } else if (people2.age < 20) {
+        categories.teenager.push(people2);
+      } else if (people2.age > 20) {
+        categories.adult.push(people2);
+      }
+    });
+    return categories;
+  };
+  filterWordsLenght = (words10: string[]) => {
+    const categories = {
+      short: [] as string[],
+      long: [] as string[],
+    };
+    words10.forEach((words) => {
+      if (words.length < 5) {
+        categories.short.push(words);
+      } else {
+        categories.long.push(words);
+      }
+    });
+    return categories;
+  };
 
   //constructor() {
   //let arr: any = [1, 2, 3, 4];
@@ -240,29 +348,29 @@ export class AppComponent {
   //задача 1: порахувати суму всіх валідних чисел у реченні
   //задача 2: написати функцію, якій передаєш назву фрукту, а вона вертає, яку кількість зїла людина
 
-  lectionnumber() {
-    let str =
-      'Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км.';
-    console.log(str);
+  //lectionnumber() {
+  //let str =
+  //   'Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км.';
+  //console.log(str);
 
-    let words: any = str.split(' ');
-    let suma = 0;
-    //words.filter((word) => !isNaN(Number(word)));
-    // console.log('After Filter number:', words);
-    //words.forEach((num) => {
-    // suma += parseFloat(num);
-    //});
-    //console.log('Сума всіх чисел у рядку:', suma);
-    words = words.filter((item: any) => !isNaN(Number(item)));
-    words = words.map((item: any) => +item);
-    console.log('After Filter number:', words);
-    words.forEach((element) => {
-      suma = suma + element;
-    });
-    console.log('After forEach :', suma);
+  //let words: any = str.split(' ');
+  //let suma = 0;
+  //words.filter((word) => !isNaN(Number(word)));
+  // console.log('After Filter number:', words);
+  //words.forEach((num) => {
+  // suma += parseFloat(num);
+  //});
+  //console.log('Сума всіх чисел у рядку:', suma);
+  //words = words.filter((item: any) => !isNaN(Number(item)));
+  //words = words.map((item: any) => +item);
+  //console.log('After Filter number:', words);
+  //words.forEach((element) => {
+  //  suma = suma + element;
+  //});
+  // console.log('After forEach :', suma);
 
-    // this.calculateString(' ', str)
-  }
+  // this.calculateString(' ', str)
+  //}
 
   //calculateString(symbol: string, str: string) {
   //  console.log(str.split(' '));
