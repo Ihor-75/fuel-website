@@ -210,35 +210,23 @@ export class AppComponent {
   }
 
   filterSizeNumber(numbers10: number[]) {
-    const categories = {
-      small: [] as number[],
-      medium: [] as number[],
-      large: [] as number[],
-    };
-    numbers10.map((num) => {
+    return numbers10.map((num) => {
       if (num < 10) {
-        categories.small.push(num);
+        return 'small';
       } else if (num < 20) {
-        categories.medium.push(num);
+        return 'medium';
       } else {
-        categories.large.push(num);
+        return 'large';
       }
     });
-    return categories;
   }
   //numbers11 = [2, 11, 5, 18, 9, 21, 6, 7];
   //вивести результат: [2, 11,9]
   // Використай Filter та залищ тільки ті числа які є непарні та більше 10 або парні та менше 10
   oddGretterNumber(numbers11: number[]) {
-    const filterNumbers = {
-      filterNumbers: [] as number[],
-    };
-    numbers11.filter((num) => {
-      if ((num % 2 !== 0 && num > 10) || (num % 2 === 0 && num < 10)) {
-        filterNumbers.filterNumbers.push(num);
-      }
-    });
-    return filterNumbers;
+    return numbers11.filter(
+      (num) => (num % 2 !== 0 && num > 10) || (num % 2 === 0 && num < 10)
+    );
   }
   numbersPositiveNegative = (numbers12: number[]) => {
     const categories = {
@@ -252,24 +240,26 @@ export class AppComponent {
         categories.positive.push(num);
       }
     });
-    return categories;
+    return (
+      'Positive: ' +
+      categories.positive.length +
+      ' Negative: ' +
+      categories.negative.length
+    );
   };
-  divisionPeople = (people2: { name: string; age: number }[]) => {
-    const categories = {
-      child: [] as { name: string; age: number }[],
-      teenager: [] as { name: string; age: number }[],
-      adult: [] as { name: string; age: number }[],
-    };
-    people2.map((people2) => {
-      if (people2.age < 12) {
-        categories.child.push(people2);
-      } else if (people2.age < 20) {
-        categories.teenager.push(people2);
-      } else if (people2.age > 20) {
-        categories.adult.push(people2);
+  divisionPeople = (
+    people2: { name: string; age: number; category?: string }[]
+  ) => {
+    return people2.map((people) => {
+      if (people.age < 12) {
+        people.category = 'child';
+      } else if (people.age < 20) {
+        people.category = 'teenager';
+      } else if (people.age > 20) {
+        people.category = 'adult';
       }
+      return people;
     });
-    return categories;
   };
   filterWordsLenght = (words10: string[]) => {
     const categories = {
@@ -283,7 +273,7 @@ export class AppComponent {
         categories.long.push(words);
       }
     });
-    return categories;
+    return 'Short: ' + categories.short + ' Long: ' + categories.long;
   };
 
   //constructor() {
