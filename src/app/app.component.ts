@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { log, Console } from 'console';
 import { text } from 'stream/consumers';
+import e from 'express';
 
 @Component({
   selector: 'app-root',
@@ -115,6 +116,31 @@ export class AppComponent {
 
     console.log('----Day---2---with---if---else--------/n');
 
+    console.log('----Day---3---with---if---else--------/n');
+    //Є масив чисел.Використай map,щоб додати докожного числового рядку позначку "even" якщо число парне, "odd" якщо число непарне.
+    //вивести результат: ['even','odd','even','odd','even','odd']
+    const numbers13 = [1, 2, 3, 4, 5, 6];
+    console.log('evenOddGretterNumber', this.evenOddGretterNumber(numbers13));
+    //Ємасив слів.Використай Filter,щоб залишити тільки ті слова які розпочинаються з голосної (a,e,i,o,u).Використай If/else для перевірки першої літери,
+    const words11 = ['apple', 'banan', 'orange', 'grape', 'umbrella', 'kiwi'];
+    console.log('vowelLetter', this.vowelLetter(words11));
+
+    //Використай map щоб перетворити градуси Цельсія у градуси Фаренгейта.Але якщл температура нижча  додай рядкову позначку "freezing"
+    //Формула переводу: (C * 9/5) + 32
+    const temperatures = [-10, 0, 15, 25, -5];
+    console.log('temperatureMup', this.temperatureMup(temperatures));
+    //Є маисв ,Використай foreach і розділи рядки на дві категорії "short" для рядків менше 5 символів, "long" для всіх інших рядків .
+    const words12 = ['cat', 'elephant', 'dog', 'mouse', 'bat'];
+    console.log('filterAnimalsLenght', this.filterAnimalsLenght(words12));
+    //Використай foreach ,щоб підрахувати кількість парних,непарних і нудьових значень в масиві
+    const numbers14 = [0, 1, 2, 3, 4, 0, 5, 6, 7];
+    const counts = { even: 0, odd: 0, zero: 0 };
+    console.log(
+      'numbersFilterPositiveNegative',
+      this.numbersFilterPositiveNegative(numbers14)
+    );
+    console.log('----Day---3---with---if---else--------/n');
+
     console.log('---------------------------------/n');
   }
 
@@ -131,6 +157,7 @@ export class AppComponent {
     let suma = 0;
     numbers.forEach((num: number) => {
       suma += num;
+      return true;
     });
     return suma / 5;
   }
@@ -276,29 +303,107 @@ export class AppComponent {
     return 'Short: ' + categories.short + ' Long: ' + categories.long;
   };
 
-  //constructor() {
-  //let arr: any = [1, 2, 3, 4];
-  //console.log(arr);
-  /*     console.log('Before:', arr[0]);
-   */
-  /* console.log('After:', arr[0]); */
-  //arr.push(5);
-  //arr.push(6);
-  //arr.push(7);
-  //console.log('After push :', arr);
-  /// arr = arr.slice(0, 5);
-  //arr = arr.filter((item: any) => item % 2 !== 0);
-  //console.log('After filter :', arr);
-  // arr = arr.map((item, index) => (index > 0 ? item - arr[index - 1] : 0));
-  //arr = arr.map((item, index) => item * 2);
-  //arr = arr.filter((item, index) => item > 5);
-  //console.log('After map :', arr);
-  //let suma = 0;
-  //arr.forEach((element) => {
-  //   suma = suma + element;
-  //});
-  //console.log('After forEach :', suma);
-  /*  let arr: any = [
+  evenOddGretterNumber = (numbers13: number[]) => {
+    return numbers13.map((num) => {
+      if (num % 2 === 0) {
+        return 'even';
+      } else {
+        return 'odd';
+      }
+    });
+  };
+  vowelLetter: (words11: string[]) => string[] = (words11: string[]) => {
+    return words11.filter((word) => {
+      if (
+        word[0] === 'a' ||
+        word[0] === 'e' ||
+        word[0] === 'i' ||
+        word[0] === 'o' ||
+        word[0] === 'u'
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  };
+  temperatureMup = (temperatures: number[]) => {
+    return temperatures.map((temp) => {
+      const fahrenheit = (temp * 9) / 5 + 32;
+      if (temp < 0) {
+        return `${fahrenheit}°F (freezing)`;
+      } else {
+        return `${fahrenheit}°F`;
+      }
+    });
+  };
+  filterAnimalsLenght = (words12: string[]) => {
+    const categories = {
+      short: [] as string[],
+      long: [] as string[],
+    };
+    words12.forEach((words) => {
+      if (words.length < 5) {
+        categories.short.push(words);
+      } else {
+        categories.long.push(words);
+      }
+    });
+    return (
+      'categories: { short: [' +
+      categories.short +
+      '], long: [' +
+      categories.long +
+      '] }'
+    );
+  };
+  numbersFilterPositiveNegative: (numbers14: number[]) => string = (
+    numbers14: number[]
+  ) => {
+    const counts = { even: 0, odd: 0, zero: 0 };
+    numbers14.forEach((num) => {
+      if (num === 0) {
+        counts.zero++;
+      } else if (num % 2 === 0) {
+        counts.even++;
+      } else {
+        counts.odd++;
+      }
+    });
+    return (
+      'counts: {even: ' +
+      counts.even +
+      ' odd: ' +
+      counts.odd +
+      ' zero: }' +
+      counts.zero
+    );
+  };
+}
+
+//constructor() {
+//let arr: any = [1, 2, 3, 4];
+//console.log(arr);
+/*     console.log('Before:', arr[0]);
+ */
+/* console.log('After:', arr[0]); */
+//arr.push(5);
+//arr.push(6);
+//arr.push(7);
+//console.log('After push :', arr);
+/// arr = arr.slice(0, 5);
+//arr = arr.filter((item: any) => item % 2 !== 0);
+//console.log('After filter :', arr);
+// arr = arr.map((item, index) => (index > 0 ? item - arr[index - 1] : 0));
+//arr = arr.map((item, index) => item * 2);
+//arr = arr.filter((item, index) => item > 5);
+//console.log('After map :', arr);
+//let suma = 0;
+//arr.forEach((element) => {
+//   suma = suma + element;
+//});
+//console.log('After forEach :', suma);
+/*  let arr: any = [
       0,
       9,
       15,
@@ -328,45 +433,45 @@ export class AppComponent {
       suma = suma + element;
     });
     console.log('After forEach :', suma); */
-  //}
+//}
 
-  // Домашнє завдання:
-  //маючи стрінгу:
+// Домашнє завдання:
+//маючи стрінгу:
 
-  //"Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км."
+//"Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км."
 
-  //задача 1: порахувати суму всіх валідних чисел у реченні
-  //задача 2: написати функцію, якій передаєш назву фрукту, а вона вертає, яку кількість зїла людина
+//задача 1: порахувати суму всіх валідних чисел у реченні
+//задача 2: написати функцію, якій передаєш назву фрукту, а вона вертає, яку кількість зїла людина
 
-  //lectionnumber() {
-  //let str =
-  //   'Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км.';
-  //console.log(str);
+//lectionnumber() {
+//let str =
+//   'Вчора, 18 листопада 2024 року, о 14:37, я купив 3 яблука, 10 гранат, 2 банани, та 5 апельсинів у супермаркеті за адресою вул. Лесі Українки, 25, витративши загалом 123 гривні, і після цього проїхав 12 км на автомобілі, який витрачає 8.5 літрів бензину на 100 км.';
+//console.log(str);
 
-  //let words: any = str.split(' ');
-  //let suma = 0;
-  //words.filter((word) => !isNaN(Number(word)));
-  // console.log('After Filter number:', words);
-  //words.forEach((num) => {
-  // suma += parseFloat(num);
-  //});
-  //console.log('Сума всіх чисел у рядку:', suma);
-  //words = words.filter((item: any) => !isNaN(Number(item)));
-  //words = words.map((item: any) => +item);
-  //console.log('After Filter number:', words);
-  //words.forEach((element) => {
-  //  suma = suma + element;
-  //});
-  // console.log('After forEach :', suma);
+//let words: any = str.split(' ');
+//let suma = 0;
+//words.filter((word) => !isNaN(Number(word)));
+// console.log('After Filter number:', words);
+//words.forEach((num) => {
+// suma += parseFloat(num);
+//});
+//console.log('Сума всіх чисел у рядку:', suma);
+//words = words.filter((item: any) => !isNaN(Number(item)));
+//words = words.map((item: any) => +item);
+//console.log('After Filter number:', words);
+//words.forEach((element) => {
+//  suma = suma + element;
+//});
+// console.log('After forEach :', suma);
 
-  // this.calculateString(' ', str)
-  //}
+// this.calculateString(' ', str)
+//}
 
-  //calculateString(symbol: string, str: string) {
-  //  console.log(str.split(' '));
-  //}
+//calculateString(symbol: string, str: string) {
+//  console.log(str.split(' '));
+//}
 
-  /*   lection() {
+/*   lection() {
     const str = 'Hello world, how is going?';
     console.log(str);
 
@@ -405,4 +510,3 @@ export class AppComponent {
     console.log('Words by coma " ": ', wordsLines.split('|').join('$'));
     console.log('Words by coma replice " ": ', wordsLines.replaceAll('|', ','));
   } */
-}
