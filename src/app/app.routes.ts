@@ -19,6 +19,7 @@ import { FontStyleComponent } from './font-style/font-style.component';
 import { ResumeComponent } from './resume/resume.component';
 import { TaskradiusComponent } from './taskradius/taskradius.component';
 import { LectionComponent } from './lection/lection.component';
+import { CreateUniversityComponent } from './universities/create-university/create-university.component';
 
 export const routes: Routes = [
   {
@@ -43,7 +44,21 @@ export const routes: Routes = [
   },
   {
     path: 'universities',
-    component: UniversitiesComponent,
+    children: [
+      {
+        path: 'list',
+        component: UniversitiesComponent,
+      },
+      {
+        path: 'create',
+        component: CreateUniversityComponent,
+      },
+      {
+        path: '',
+        redirectTo: 'list',
+        pathMatch: 'full',
+      },
+    ],
   },
   {
     path: 'univa',
@@ -79,7 +94,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'lection',
+    redirectTo: 'universities',
     pathMatch: 'full',
   },
 ];

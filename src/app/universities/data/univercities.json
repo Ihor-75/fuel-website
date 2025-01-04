@@ -1,0 +1,1656 @@
+{
+  "univercities": [
+    {
+      "domains": [
+        "ahe.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Academy of Humanities and Economics in Lodz",
+      "webPages": [
+        "http://www.ahe.edu.pl/"
+      ],
+      "id": "9"
+    },
+    {
+      "domains": [
+        "amb.bydgoszcz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Medical Academy Ludwik Rydygier in Bydgoszcz",
+      "webPages": [
+        "http://www.amb.bydgoszcz.pl/"
+      ],
+      "id": "10"
+    },
+    {
+      "domains": [
+        "am.katowice.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Karol Szymanowski\" in Katowice",
+      "webPages": [
+        "http://www.am.katowice.pl/"
+      ],
+      "id": "13"
+    },
+    {
+      "domains": [
+        "am.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Medical Academy in Lublin",
+      "webPages": [
+        "http://www.am.lublin.pl/"
+      ],
+      "id": "15"
+    },
+    {
+      "domains": [
+        "amu.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Adam Mickiewicz University of Poznan",
+      "webPages": [
+        "http://www.amu.edu.pl/"
+      ],
+      "id": "16"
+    },
+    {
+      "domains": [
+        "amuz.bydgoszcz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Felix Nowowiejski\" in Bydgoszcz",
+      "webPages": [
+        "http://www.amuz.bydgoszcz.pl/"
+      ],
+      "id": "17"
+    },
+    {
+      "domains": [
+        "amuz.gda.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Stanislaw Moniuszko\" in Gdansk",
+      "webPages": [
+        "http://www.amuz.gda.pl/"
+      ],
+      "id": "18"
+    },
+    {
+      "domains": [
+        "amuz.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy in Cracow",
+      "webPages": [
+        "http://www.amuz.krakow.pl/"
+      ],
+      "id": "19"
+    },
+    {
+      "domains": [
+        "amuz.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Ignacy Jana Paderewski\" in Poznan",
+      "webPages": [
+        "http://www.amuz.poznan.pl/"
+      ],
+      "id": "21"
+    },
+    {
+      "domains": [
+        "amuz.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Karol Lipinski\" in Wroclaw",
+      "webPages": [
+        "http://www.amuz.wroc.pl/"
+      ],
+      "id": "22"
+    },
+    {
+      "domains": [
+        "amwaw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Medical Academy in Warszawa",
+      "webPages": [
+        "http://www.amwaw.edu.pl/"
+      ],
+      "id": "23"
+    },
+    {
+      "domains": [
+        "am.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Medical Academy in Wroclaw",
+      "webPages": [
+        "http://www.am.wroc.pl/"
+      ],
+      "id": "24"
+    },
+    {
+      "domains": [
+        "ap.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Polonia University in Czêstochowa",
+      "webPages": [
+        "http://www.ap.edu.pl/"
+      ],
+      "id": "25"
+    },
+    {
+      "domains": [
+        "ap.siedlce.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Akademia Podlaska",
+      "webPages": [
+        "http://www.ap.siedlce.pl/"
+      ],
+      "id": "26"
+    },
+    {
+      "domains": [
+        "ar.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Cracow",
+      "webPages": [
+        "http://www.ar.krakow.pl/"
+      ],
+      "id": "27"
+    },
+    {
+      "domains": [
+        "ar.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Lublin",
+      "webPages": [
+        "http://www.ar.lublin.pl/"
+      ],
+      "id": "28"
+    },
+    {
+      "domains": [
+        "ar.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Szczecin",
+      "webPages": [
+        "http://www.ar.szczecin.pl/"
+      ],
+      "id": "29"
+    },
+    {
+      "domains": [
+        "ar.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Wroclaw",
+      "webPages": [
+        "http://www.ar.wroc.pl/"
+      ],
+      "id": "31"
+    },
+    {
+      "domains": [
+        "asp.gda.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy in Gdansk",
+      "webPages": [
+        "http://www.asp.gda.pl/"
+      ],
+      "id": "32"
+    },
+    {
+      "domains": [
+        "aspkat.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy in Katowice",
+      "webPages": [
+        "http://www.aspkat.edu.pl/"
+      ],
+      "id": "33"
+    },
+    {
+      "domains": [
+        "asp.lodz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy Wladyslaw Strzeminski in Lodz",
+      "webPages": [
+        "http://www.asp.lodz.pl/"
+      ],
+      "id": "34"
+    },
+    {
+      "domains": [
+        "asp.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy in Poznan",
+      "webPages": [
+        "http://www.asp.poznan.pl/"
+      ],
+      "id": "35"
+    },
+    {
+      "domains": [
+        "asp.waw.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy in Warsaw",
+      "webPages": [
+        "http://www.asp.waw.pl/"
+      ],
+      "id": "36"
+    },
+    {
+      "domains": [
+        "asp.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Fine Arts Academy in Wroclaw",
+      "webPages": [
+        "http://www.asp.wroc.pl/"
+      ],
+      "id": "37"
+    },
+    {
+      "domains": [
+        "at.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Aleksander Zelwerowicz State Theatre Academy",
+      "webPages": [
+        "http://www.at.edu.pl/"
+      ],
+      "id": "38"
+    },
+    {
+      "domains": [
+        "au.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Poznan",
+      "webPages": [
+        "http://www.au.poznan.pl/"
+      ],
+      "id": "39"
+    },
+    {
+      "domains": [
+        "awf.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Physical Education Academy \"Jozef Pilsudski\" in Warsaw",
+      "webPages": [
+        "http://www.awf.edu.pl/"
+      ],
+      "id": "40"
+    },
+    {
+      "domains": [
+        "awf.gda.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Physical Education Academy \"Jedrzej Sniadecki\" in Gdansk",
+      "webPages": [
+        "http://www.awf.gda.pl/"
+      ],
+      "id": "41"
+    },
+    {
+      "domains": [
+        "awf.katowice.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Physical Education Academy in Katowice",
+      "webPages": [
+        "http://www.awf.katowice.pl/"
+      ],
+      "id": "42"
+    },
+    {
+      "domains": [
+        "awf.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University School of Physical Education",
+      "webPages": [
+        "http://www.awf.krakow.pl/"
+      ],
+      "id": "43"
+    },
+    {
+      "domains": [
+        "awf.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Physical Education Academy \"Eugeniusz Piasecki\" in Poznan",
+      "webPages": [
+        "http://www.awf.poznan.pl/"
+      ],
+      "id": "44"
+    },
+    {
+      "domains": [
+        "awf.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Physical Education Academy in Wroclaw",
+      "webPages": [
+        "http://www.awf.wroc.pl/"
+      ],
+      "id": "45"
+    },
+    {
+      "domains": [
+        "chopin.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy \"Fryderyk Chopin\" in Warszaw",
+      "webPages": [
+        "http://www.chopin.edu.pl/"
+      ],
+      "id": "46"
+    },
+    {
+      "domains": [
+        "collegium.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Collegium Civitas",
+      "webPages": [
+        "http://www.collegium.edu.pl/"
+      ],
+      "id": "47"
+    },
+    {
+      "domains": [
+        "dswe.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.",
+      "webPages": [
+        "http://www.dswe.wroc.pl/"
+      ],
+      "id": "48"
+    },
+    {
+      "domains": [
+        "eas.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "European Academy of Arts in Warsaw",
+      "webPages": [
+        "http://www.eas.edu.pl/"
+      ],
+      "id": "49"
+    },
+    {
+      "domains": [
+        "filmowka.lodz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "State Film, Television and Theatre Higher School Leon Schiller in Lodz",
+      "webPages": [
+        "http://www.filmowka.lodz.pl/"
+      ],
+      "id": "50"
+    },
+    {
+      "domains": [
+        "gallus.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Silesian School of Economics and Languages",
+      "webPages": [
+        "http://www.gallus.pl/"
+      ],
+      "id": "51"
+    },
+    {
+      "domains": [
+        "gwsh.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Katowice School of Economics",
+      "webPages": [
+        "http://www.gwsh.pl/"
+      ],
+      "id": "52"
+    },
+    {
+      "domains": [
+        "ifg.com.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "French Institute of Management",
+      "webPages": [
+        "http://www.ifg.com.pl/"
+      ],
+      "id": "53"
+    },
+    {
+      "domains": [
+        "ksw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Andrzej Frycz Modrzewski Cracow College",
+      "webPages": [
+        "http://www.ksw.edu.pl/"
+      ],
+      "id": "54"
+    },
+    {
+      "domains": [
+        "kul.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Catholic University of Lublin",
+      "webPages": [
+        "http://www.kul.lublin.pl/"
+      ],
+      "id": "55"
+    },
+    {
+      "domains": [
+        "lazarski.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Lazarski School of Commerce and Law",
+      "webPages": [
+        "http://www.lazarski.pl/"
+      ],
+      "id": "56"
+    },
+    {
+      "domains": [
+        "man.radom.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Radom",
+      "webPages": [
+        "http://www.man.radom.pl/"
+      ],
+      "id": "57"
+    },
+    {
+      "domains": [
+        "nkrriwf.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Teacher Training College of Revalidation, Rehabilitation and Physical Education",
+      "webPages": [
+        "http://www.nkrriwf.pl/"
+      ],
+      "id": "58"
+    },
+    {
+      "domains": [
+        "pam.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pomeranian Academy of Medicine in Szczecin",
+      "webPages": [
+        "http://www.pam.szczecin.pl/"
+      ],
+      "id": "59"
+    },
+    {
+      "domains": [
+        "pb.bialystok.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Bialystok",
+      "webPages": [
+        "http://www.pb.bialystok.pl/"
+      ],
+      "id": "60"
+    },
+    {
+      "domains": [
+        "pcz.czest.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Czestochowa",
+      "webPages": [
+        "http://www.pcz.czest.pl/"
+      ],
+      "id": "61"
+    },
+    {
+      "domains": [
+        "pg.gda.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Gdansk",
+      "webPages": [
+        "http://www.pg.gda.pl/"
+      ],
+      "id": "62"
+    },
+    {
+      "domains": [
+        "pjwstk.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Polish-Japanese Institute of Information Technology in Warsaw",
+      "webPages": [
+        "http://www.pjwstk.edu.pl/"
+      ],
+      "id": "63"
+    },
+    {
+      "domains": [
+        "pk.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Cracow",
+      "webPages": [
+        "http://www.pk.edu.pl/"
+      ],
+      "id": "64"
+    },
+    {
+      "domains": [
+        "p.lodz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Lodz",
+      "webPages": [
+        "http://www.p.lodz.pl/"
+      ],
+      "id": "65"
+    },
+    {
+      "domains": [
+        "pol.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Lublin",
+      "webPages": [
+        "http://www.pol.lublin.pl/"
+      ],
+      "id": "66"
+    },
+    {
+      "domains": [
+        "polsl.gliwice.pl",
+        "polsl.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Silesian Technical University of Gliwice",
+      "webPages": [
+        "http://www.polsl.gliwice.pl/",
+        "http://www.polsl.pl/"
+      ],
+      "id": "67"
+    },
+    {
+      "domains": [
+        "po.opole.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Opole",
+      "webPages": [
+        "http://www.po.opole.pl/"
+      ],
+      "id": "68"
+    },
+    {
+      "domains": [
+        "prz.rzeszow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Rzeszow",
+      "webPages": [
+        "http://www.prz.rzeszow.pl/"
+      ],
+      "id": "69"
+    },
+    {
+      "domains": [
+        "pu.kielce.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Kielce",
+      "webPages": [
+        "http://www.pu.kielce.pl/"
+      ],
+      "id": "70"
+    },
+    {
+      "domains": [
+        "puls.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Poznan University of Life Sciences",
+      "webPages": [
+        "http://www.puls.edu.pl/"
+      ],
+      "id": "71"
+    },
+    {
+      "domains": [
+        "put.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Poznan",
+      "webPages": [
+        "http://www.put.poznan.pl/"
+      ],
+      "id": "72"
+    },
+    {
+      "domains": [
+        "pw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Warsaw University of Technology",
+      "webPages": [
+        "http://www.pw.edu.pl/"
+      ],
+      "id": "73"
+    },
+    {
+      "domains": [
+        "pwr.wroc.pl",
+        "pwr.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Wroclaw",
+      "webPages": [
+        "http://www.pwr.wroc.pl/",
+        "https://pwr.edu.pl/"
+      ],
+      "id": "74"
+    },
+    {
+      "domains": [
+        "pwst.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Ludwik Solski State Academy of Theatre in Cracow",
+      "webPages": [
+        "http://www.pwst.krakow.pl/"
+      ],
+      "id": "75"
+    },
+    {
+      "domains": [
+        "pwsz.eu"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Walcz College",
+      "webPages": [
+        "http://www.pwsz.eu/"
+      ],
+      "id": "76"
+    },
+    {
+      "domains": [
+        "pwsz.pila.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Staszic Pila College",
+      "webPages": [
+        "http://www.pwsz.pila.pl/"
+      ],
+      "id": "77"
+    },
+    {
+      "domains": [
+        "pz.zgora.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Zielona Gora",
+      "webPages": [
+        "http://www.pz.zgora.pl/"
+      ],
+      "id": "78"
+    },
+    {
+      "domains": [
+        "qdnet.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Christian Theological Academy in Warszaw",
+      "webPages": [
+        "http://www.qdnet.pl/ChAT/"
+      ],
+      "id": "79"
+    },
+    {
+      "domains": [
+        "sggw.waw.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Agricultural University of Warsaw",
+      "webPages": [
+        "http://www.sggw.waw.pl/"
+      ],
+      "id": "80"
+    },
+    {
+      "domains": [
+        "sgh.waw.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Warsaw School of Economics",
+      "webPages": [
+        "http://www.sgh.waw.pl/"
+      ],
+      "id": "81"
+    },
+    {
+      "domains": [
+        "slam.katowice.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Silesian Academy of Medicine in Katowice",
+      "webPages": [
+        "http://www.slam.katowice.pl/"
+      ],
+      "id": "82"
+    },
+    {
+      "domains": [
+        "swps.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Warsaw School of Social Psychology",
+      "webPages": [
+        "http://www.swps.edu.pl/"
+      ],
+      "id": "83"
+    },
+    {
+      "domains": [
+        "tu.kielce.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Kielce",
+      "webPages": [
+        "http://www.tu.kielce.pl/"
+      ],
+      "id": "84"
+    },
+    {
+      "domains": [
+        "tu.koszalin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Koszalin",
+      "webPages": [
+        "http://www.tu.koszalin.pl/"
+      ],
+      "id": "85"
+    },
+    {
+      "domains": [
+        "tuniv.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Technical University of Szczecin",
+      "webPages": [
+        "http://www.tuniv.szczecin.pl/"
+      ],
+      "id": "86"
+    },
+    {
+      "domains": [
+        "tyszkiewicz.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Józef Tyszkiewicz College of Business and Computer Science in Bielsko-Biala",
+      "webPages": [
+        "http://www.tyszkiewicz.edu.pl/"
+      ],
+      "id": "87"
+    },
+    {
+      "domains": [
+        "ub.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Bialystok",
+      "webPages": [
+        "http://www.ub.edu.pl/"
+      ],
+      "id": "88"
+    },
+    {
+      "domains": [
+        "uj.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Jagiellonian University Cracow",
+      "webPages": [
+        "http://www.uj.edu.pl/"
+      ],
+      "id": "89"
+    },
+    {
+      "domains": [
+        "uksw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Cardinal Stefan Wyszynski University in Warsaw",
+      "webPages": [
+        "http://www.uksw.edu.pl/"
+      ],
+      "id": "90"
+    },
+    {
+      "domains": [
+        "umcs.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Maria Curie-Sklodowska University Lublin",
+      "webPages": [
+        "http://www.umcs.lublin.pl/"
+      ],
+      "id": "91"
+    },
+    {
+      "domains": [
+        "wsei.lublin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Economics and Innovation Lublin",
+      "webPages": [
+        "https://www.wsei.lublin.pl/"
+      ],
+      "id": "92"
+    },
+    {
+      "domains": [
+        "uni.lodz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Lodz",
+      "webPages": [
+        "http://www.uni.lodz.pl/"
+      ],
+      "id": "93"
+    },
+    {
+      "domains": [
+        "uni.opole.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Opole",
+      "webPages": [
+        "http://www.uni.opole.pl/"
+      ],
+      "id": "94"
+    },
+    {
+      "domains": [
+        "uni.torun.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Nicolaus Copernicus University of Torun",
+      "webPages": [
+        "http://www.uni.torun.pl/"
+      ],
+      "id": "95"
+    },
+    {
+      "domains": [
+        "univ.gda.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Gdansk",
+      "webPages": [
+        "http://www.univ.gda.pl/"
+      ],
+      "id": "96"
+    },
+    {
+      "domains": [
+        "univ.rzeszow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Rzeszow",
+      "webPages": [
+        "http://www.univ.rzeszow.pl/"
+      ],
+      "id": "97"
+    },
+    {
+      "domains": [
+        "univ.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Szczecin",
+      "webPages": [
+        "http://www.univ.szczecin.pl/"
+      ],
+      "id": "98"
+    },
+    {
+      "domains": [
+        "uni.wroc.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Wroclaw",
+      "webPages": [
+        "http://www.uni.wroc.pl/"
+      ],
+      "id": "99"
+    },
+    {
+      "domains": [
+        "us.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Silesia",
+      "webPages": [
+        "http://www.us.edu.pl/"
+      ],
+      "id": "100"
+    },
+    {
+      "domains": [
+        "usoms.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Medical Academy Karol Marcinkowski in Poznan",
+      "webPages": [
+        "http://www.usoms.poznan.pl/"
+      ],
+      "id": "101"
+    },
+    {
+      "domains": [
+        "utp.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Technology and Life Sciences",
+      "webPages": [
+        "http://www.utp.edu.pl/"
+      ],
+      "id": "102"
+    },
+    {
+      "domains": [
+        "uw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Warsaw",
+      "webPages": [
+        "http://www.uw.edu.pl/"
+      ],
+      "id": "103"
+    },
+    {
+      "domains": [
+        "uwm.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Wamia and Masuria in Olsztyn",
+      "webPages": [
+        "http://www.uwm.edu.pl/"
+      ],
+      "id": "104"
+    },
+    {
+      "domains": [
+        "wlodkowic.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pawel Wlodkowic University College in Plock",
+      "webPages": [
+        "http://www.wlodkowic.pl/"
+      ],
+      "id": "105"
+    },
+    {
+      "domains": [
+        "wsb-nlu.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Higher School o Business/National Louis University(WSB/NLU) in Nowy Sacz",
+      "webPages": [
+        "http://www.wsb-nlu.edu.pl/"
+      ],
+      "id": "106"
+    },
+    {
+      "domains": [
+        "wsb.poznan.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Poznan School of Banking",
+      "webPages": [
+        "http://www.wsb.poznan.pl/"
+      ],
+      "id": "107"
+    },
+    {
+      "domains": [
+        "wsb.toi.tarnow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Higher School o Business in Tarnow",
+      "webPages": [
+        "http://wsb.toi.tarnow.pl/"
+      ],
+      "id": "108"
+    },
+    {
+      "domains": [
+        "wsfiz.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Finance and Management in Bialystok",
+      "webPages": [
+        "http://www.wsfiz.edu.pl/"
+      ],
+      "id": "109"
+    },
+    {
+      "domains": [
+        "wsh.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Aleksander Gieysztor School of Humanities in Pultusk",
+      "webPages": [
+        "http://www.wsh.edu.pl/"
+      ],
+      "id": "110"
+    },
+    {
+      "domains": [
+        "wship.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Ryszard Lazarski University of Commerce and Law in Warsaw",
+      "webPages": [
+        "http://www.wship.edu.pl/"
+      ],
+      "id": "111"
+    },
+    {
+      "domains": [
+        "wsinf.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "College of Computer Science in Lodz",
+      "webPages": [
+        "http://www.wsinf.edu.pl/"
+      ],
+      "id": "112"
+    },
+    {
+      "domains": [
+        "wsisiz.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Warsaw School of Information Technology",
+      "webPages": [
+        "http://www.wsisiz.edu.pl/"
+      ],
+      "id": "113"
+    },
+    {
+      "domains": [
+        "wsiz.rzeszow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Information Technology and Management in Rzeszow",
+      "webPages": [
+        "http://www.wsiz.rzeszow.pl/"
+      ],
+      "id": "114"
+    },
+    {
+      "domains": [
+        "wsm.gdynia.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Gdynia Maritime Academy",
+      "webPages": [
+        "http://www.wsm.gdynia.pl/"
+      ],
+      "id": "115"
+    },
+    {
+      "domains": [
+        "wsms.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Academy of International Economic and Political Relations, Gdynia",
+      "webPages": [
+        "http://www.wsms.edu.pl/"
+      ],
+      "id": "116"
+    },
+    {
+      "domains": [
+        "wsm.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Maritime University in Szczecin",
+      "webPages": [
+        "http://www.wsm.szczecin.pl/"
+      ],
+      "id": "117"
+    },
+    {
+      "domains": [
+        "wsp.bydgoszcz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Bydgoszcz",
+      "webPages": [
+        "http://www.wsp.bydgoszcz.pl/"
+      ],
+      "id": "118"
+    },
+    {
+      "domains": [
+        "wsp.czest.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Czestochowa",
+      "webPages": [
+        "http://www.wsp.czest.pl/"
+      ],
+      "id": "119"
+    },
+    {
+      "domains": [
+        "wspiz.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Leon Kozminski Academy of Entrepreneurship and Management in Warsaw",
+      "webPages": [
+        "http://www.wspiz.edu.pl/"
+      ],
+      "id": "120"
+    },
+    {
+      "domains": [
+        "wsp.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Krakow",
+      "webPages": [
+        "http://www.wsp.krakow.pl/"
+      ],
+      "id": "121"
+    },
+    {
+      "domains": [
+        "wsp.slupsk.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Slupsk",
+      "webPages": [
+        "http://www.wsp.slupsk.pl/"
+      ],
+      "id": "122"
+    },
+    {
+      "domains": [
+        "wsps.waw.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Maria Grzegorzewska College for Special Education",
+      "webPages": [
+        "http://www.wsps.waw.pl/"
+      ],
+      "id": "123"
+    },
+    {
+      "domains": [
+        "wsptwpwaw.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of the Polish Association for Adult Education in Warsaw",
+      "webPages": [
+        "http://www.wsptwpwaw.edu.pl/"
+      ],
+      "id": "124"
+    },
+    {
+      "domains": [
+        "wsp.zgora.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Pedagogical University of Zielona Gora",
+      "webPages": [
+        "http://www.wsp.zgora.pl/"
+      ],
+      "id": "125"
+    },
+    {
+      "domains": [
+        "wsub.waw.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Insurance and Banking in Warsaw",
+      "webPages": [
+        "http://www.wsub.waw.pl/"
+      ],
+      "id": "126"
+    },
+    {
+      "domains": [
+        "wszib.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "School of Banking and Management in Cracow",
+      "webPages": [
+        "http://www.wszib.krakow.pl/"
+      ],
+      "id": "127"
+    },
+    {
+      "domains": [
+        "wszim.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "University of Management and Marketing",
+      "webPages": [
+        "http://www.wszim.edu.pl/"
+      ],
+      "id": "128"
+    },
+    {
+      "domains": [
+        "wsz.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Gdansk Management College",
+      "webPages": [
+        "http://www.wsz.pl/"
+      ],
+      "id": "129"
+    },
+    {
+      "domains": [
+        "wsz-pou.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Polish Open University in Warsaw (WSZ/POU)",
+      "webPages": [
+        "http://www.wsz-pou.edu.pl/"
+      ],
+      "id": "130"
+    },
+    {
+      "domains": [
+        "zpsb.szczecin.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "West Pomeranian Business School in Szczecin",
+      "webPages": [
+        "http://www.zpsb.szczecin.pl/"
+      ],
+      "id": "131"
+    },
+    {
+      "domains": [
+        "if-pan.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Maj Institute of Pharmacology Polish Academy of Sciences",
+      "webPages": [
+        "https://if-pan.krakow.pl/"
+      ],
+      "id": "132"
+    },
+    {
+      "domains": [
+        "camk.edu.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Nicolaus Copernicus Astronomical Center of Pharmacology Polish Academy of Sciences",
+      "webPages": [
+        "https://camk.edu.pl/"
+      ],
+      "id": "133"
+    },
+    {
+      "country": "Poland",
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "domains": [
+        "students.vizja.pl"
+      ],
+      "name": "University of Economics and Humanities Warsaw",
+      "webPages": [
+        "https://vizja.pl"
+      ],
+      "id": "134"
+    },
+    {
+      "country": "Poland",
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "domains": [
+        "swps.pl"
+      ],
+      "name": "Uniwersytet SWPS",
+      "webPages": [
+        "https://swps.pl/"
+      ],
+      "id": "135"
+    },
+    {
+      "id": "19",
+      "domains": [
+        "amuz.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy in Cracow",
+      "webPages": [
+        "http://www.amuz.krakow.pl/"
+      ]
+    },
+    {
+      "id": "19",
+      "domains": [
+        "amuz.krakow.pl"
+      ],
+      "stateProvince": null,
+      "alphaTwoCode": "PL",
+      "country": "Poland",
+      "name": "Music Academy in Cracow",
+      "webPages": [
+        "http://www.amuz.krakow.pl/"
+      ]
+    },
+    {
+      "id": 999,
+      "name": "Music university",
+      "alphaTwoCode": "UA",
+      "domains": "Ukraine",
+      "stateProvince": "Ucraine",
+      "country": "Ukraine",
+      "webPages": "sdsfds"
+    },
+    {
+      "id": 4,
+      "name": "Lviv Scholl",
+      "alphaTwoCode": "UA",
+      "domains": "scholl.lviv.com",
+      "stateProvince": "Lviv",
+      "country": "Ukraine",
+      "webPages": "scholl.lviv.com"
+    },
+    {
+      "id": 1,
+      "name": "Kharkiv school",
+      "alphaTwoCode": "UA",
+      "domains": "kharkiv.school.ua",
+      "stateProvince": "Kharkiv",
+      "country": "Ukraine",
+      "webPages": "kharkiv.school.ua"
+    },
+    {
+      "id": 2,
+      "name": "Kharkiv school 22",
+      "alphaTwoCode": "UA",
+      "domains": "UA",
+      "stateProvince": "Kharkiv",
+      "country": "Ukraine",
+      "webPages": "kharkiv.school.2.ua"
+    }
+  ]
+}

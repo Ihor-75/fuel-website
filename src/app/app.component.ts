@@ -137,7 +137,7 @@ export class AppComponent {
     const counts = { even: 0, odd: 0, zero: 0 };
     console.log(
       'numbersFilterPositiveNegative',
-      this.numbersFilterPositiveNegative(numbers14)
+      this.numbersFilterPositiveNegative(numbers14, counts)
     );
     console.log('----Day---3---with---if---else--------/n');
 
@@ -357,28 +357,26 @@ export class AppComponent {
       '] }'
     );
   };
-  numbersFilterPositiveNegative: (numbers14: number[]) => string = (
-    numbers14: number[]
-  ) => {
-    const counts = { even: 0, odd: 0, zero: 0 };
-    numbers14.forEach((num) => {
-      if (num === 0) {
-        counts.zero++;
-      } else if (num % 2 === 0) {
-        counts.even++;
-      } else {
-        counts.odd++;
-      }
-    });
-    return (
-      'counts: {even: ' +
-      counts.even +
-      ' odd: ' +
-      counts.odd +
-      ' zero: }' +
-      counts.zero
-    );
-  };
+  numbersFilterPositiveNegative: (numbers14: number[], counts: any) => string =
+    (numbers14: number[], counts: any) => {
+      numbers14.forEach((num) => {
+        if (num === 0) {
+          counts.zero++;
+        } else if (num % 2 === 0) {
+          counts.even++;
+        } else {
+          counts.odd++;
+        }
+      });
+      return (
+        'counts: {even: ' +
+        counts.even +
+        ' odd: ' +
+        counts.odd +
+        ' zero: }' +
+        counts.zero
+      );
+    };
 }
 
 //constructor() {

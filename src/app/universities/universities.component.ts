@@ -1,4 +1,4 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { UniversitiesService } from './../services/universities.service';
 import { Component, inject, OnInit } from '@angular/core';
@@ -8,6 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
+import { ApiService } from './services/api.service';
+import { Univercity } from './services/university.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-universities',
@@ -22,24 +25,37 @@ import { MatTableModule } from '@angular/material/table';
     MatInputModule,
     MatSnackBarModule,
     MatTableModule,
+    ReactiveFormsModule,
   ],
   templateUrl: './universities.component.html',
   styleUrl: './universities.component.scss',
 })
 export class UniversitiesComponent implements OnInit {
   private _snackBar = inject(MatSnackBar);
-  constructor(private UniversitiesService: UniversitiesService) {}
-
-  universities: {
-    name: string;
-    web_pages: string[];
-    country: string;
-    alpha_two_code: string;
-    domains: string[];
-  }[] = [];
+  universities: Univercity[] = [];
+  allUnivercities: Univercity[] = [];
+  constructor(
+    private UniversitiesService: UniversitiesService,
+    private apiService: ApiService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
-    this.getUniversities();
+    // this.getUniversities();
+    this.getLocalUnivertisies();
+    /*    this.apiService
+      .createUnivercity({
+        domains: ['amuz.krakow.pl'],
+        stateProvince: null,
+        alphaTwoCode: 'UA',
+        country: 'Ukraine',
+        name: 'Music Academy M. Lysenko',
+        webPages: ['http://www.amuz.krakow.pl/'],
+        id: 999,
+      })
+      .subscribe((data) => {
+        console.log('Create univercity: ', data);
+      }); */
   }
   country: string = 'Ukraine';
   countries: string[] = [
@@ -66,5 +82,25 @@ export class UniversitiesComponent implements OnInit {
         this.universities = data;
       }
     );
+  }
+
+  getLocalUnivertisies() {
+    this.apiService.getUnivercitys().subscribe((data: Univercity[]) => {
+      console.log(data);
+      this.universities = data;
+      this.universities.sort((a, b) => a.id - b.id);
+      this.allUnivercities = [...data];
+    });
+  }
+
+  deleteUniversity(id: number) {
+    this.apiService.deleteUnivercity(id).subscribe((response) => {
+      this.getLocalUnivertisies();
+      // this.univercities = this.univercities.filter((item: any) => item.id !== id);
+      console.log('Delete univercity: ', response);
+    });
+  }
+  openCreatePage() {
+    this.router.navigate(['universities/create']);
   }
 }

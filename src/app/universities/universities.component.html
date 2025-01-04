@@ -12,19 +12,25 @@
     <button (click)="getUniversities()" mat-raised-button type="button">
       Reload Universities
     </button>
+    <button (click)="openCreatePage()" mat-raised-button type="button">
+      Add Universities
+    </button>
   </p>
-  <p [routerLink]="['/e-commerce']">
+  <p [routerLink]="['/e-commerce ']">
     Universities amount: {{ universities.length }}
   </p>
-  <ol>
+  <ul>
     <li *ngFor="let university of universities">
+      <span>{{ university.id }} </span>
       <span>{{ university.name }} </span>
+      <span>{{ university.country }} </span>
       <!--       <span>{{ university.country }} </span>
       <span>{{ university.country_code }} </span> -->
-      <a target="_blank" [href]="university.web_pages[0]">Link on website</a>
+      <a target="_blank" [href]="university.webPages[0]">Link on website</a>
       <!--       <a target="_blank" [href]="university.web_pages1[0]">Link on website1</a> -->
+      <button (click)="deleteUniversity(university.id)">Delete</button>
     </li>
-  </ol>
+  </ul>
 
   <table>
     <thead>
@@ -39,10 +45,10 @@
     <tbody>
       <tr *ngFor="let university of universities">
         <td>{{ university.name }}</td>
-        <td>{{ university.web_pages[0] }}</td>
+        <td>{{ university.webPages[0] }}</td>
         <td>{{ university.domains[0] }}</td>
         <td>{{ university.country }}</td>
-        <td>{{ university.alpha_two_code }}</td>
+        <td>{{ university.alphaTwoCode }}</td>
         <!--   <td>{{ university.web_pages1 }}</td> -->
       </tr>
     </tbody>
