@@ -10,8 +10,11 @@ export class ApiService {
   private apiUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
-  getUnivercitys(): Observable<Univercity[]> {
+  getUnivercities(): Observable<Univercity[]> {
     return this.http.get<Univercity[]>(`${this.apiUrl}/univercities`);
+  }
+  getUnivercity(id: number): Observable<Univercity> {
+    return this.http.get<Univercity>(`${this.apiUrl}/univercities/${id}`);
   }
   createUnivercity(univercity: Univercity): Observable<Univercity> {
     return this.http.post<Univercity>(

@@ -1,3 +1,5 @@
+import id from '@angular/common/locales/id';
+import { Univercity } from './../services/university.model';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
@@ -12,7 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ApiService } from '../services/api.service';
 
 @Component({
@@ -37,9 +39,22 @@ export class CreateUniversityComponent {
 
   constructor(
     private router: Router,
+    private activateRoute: ActivatedRoute,
     private fb: FormBuilder,
     private apiService: ApiService
-  ) {}
+  ) {
+    this.activateRoute.params.subscribe((params: { id: string }) => {
+      if (params.id) {
+        this.getUnivercity(+params.id);
+      }
+    });
+  }
+  getUnivercity(id: number) {
+    this.apiService.getUnivercity(id).subscribe((university) => {
+      this.universityForm.patchValue(university);
+      //console.log(university);
+    });
+  }
   openListPage() {
     this.router.navigate(['universities/']);
   }

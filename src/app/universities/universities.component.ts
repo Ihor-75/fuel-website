@@ -85,7 +85,7 @@ export class UniversitiesComponent implements OnInit {
   }
 
   getLocalUnivertisies() {
-    this.apiService.getUnivercitys().subscribe((data: Univercity[]) => {
+    this.apiService.getUnivercities().subscribe((data: Univercity[]) => {
       console.log(data);
       this.universities = data;
       this.universities.sort((a, b) => a.id - b.id);

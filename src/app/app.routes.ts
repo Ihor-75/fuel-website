@@ -54,6 +54,10 @@ export const routes: Routes = [
         component: CreateUniversityComponent,
       },
       {
+        path: 'edit/:id',
+        component: CreateUniversityComponent,
+      },
+      {
         path: '',
         redirectTo: 'list',
         pathMatch: 'full',
