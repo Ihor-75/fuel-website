@@ -36,19 +36,14 @@ import { ApiService } from '../services/api.service';
 })
 export class CreateUniversityComponent {
   universityForm!: FormGroup;
+  routeId: string;
 
   constructor(
     private router: Router,
     private activateRoute: ActivatedRoute,
     private fb: FormBuilder,
     private apiService: ApiService
-  ) {
-    this.activateRoute.params.subscribe((params: { id: string }) => {
-      if (params.id) {
-        this.getUnivercity(+params.id);
-      }
-    });
-  }
+  ) {}
   getUnivercity(id: number) {
     this.apiService.getUnivercity(id).subscribe((university) => {
       this.universityForm.patchValue(university);
@@ -68,10 +63,30 @@ export class CreateUniversityComponent {
       country: ['', [Validators.required]],
       webPages: [[], [Validators.required]],
     });
+    this.activateRoute.params.subscribe((params: { id: string }) => {
+      this.routeId = params.id;
+      if (params.id) {
+        this.getUnivercity(+params.id);
+      }
+    });
   }
 
   onSubmit(): void {
     if (this.universityForm.valid) {
+      if (this.routeId) {
+        this.apiService
+          .updateUnivercity(+this.routeId, this.universityForm.value)
+          .subscribe(() => {
+            this.openListPage();
+          });
+        return;
+      } else {
+        this.apiService
+          .createUnivercity(this.universityForm.value)
+          .subscribe(() => {
+            this.openListPage();
+          });
+      }
       this.apiService
         .createUnivercity(this.universityForm.value)
         .subscribe(() => {

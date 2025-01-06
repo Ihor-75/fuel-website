@@ -80,6 +80,8 @@
   </mat-form-field>
 
   <div class="button-container">
-    <button mat-raised-button color="primary" type="submit">Submit</button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ routeId ? "Edit" : "Create" }}
+    </button>
   </div>
 </form>

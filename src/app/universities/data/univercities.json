@@ -1617,8 +1617,8 @@
       ]
     },
     {
-      "id": 999,
-      "name": "Music university",
+      "id": "999",
+      "name": "Music Boxing UA",
       "alphaTwoCode": "UA",
       "domains": "Ukraine",
       "stateProvince": "Ucraine",
@@ -1626,7 +1626,7 @@
       "webPages": "sdsfds"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Lviv Scholl",
       "alphaTwoCode": "UA",
       "domains": "scholl.lviv.com",
@@ -1635,7 +1635,7 @@
       "webPages": "scholl.lviv.com"
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Kharkiv school",
       "alphaTwoCode": "UA",
       "domains": "kharkiv.school.ua",
@@ -1644,13 +1644,58 @@
       "webPages": "kharkiv.school.ua"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Kharkiv school 22",
       "alphaTwoCode": "UA",
       "domains": "UA",
       "stateProvince": "Kharkiv",
       "country": "Ukraine",
       "webPages": "kharkiv.school.2.ua"
+    },
+    {
+      "id": "666",
+      "name": "Sambir school",
+      "alphaTwoCode": "UA",
+      "domains": "sambir.ua",
+      "stateProvince": "Sambir",
+      "country": "Ukraine",
+      "webPages": "sambir.ua"
+    },
+    {
+      "id": "1001",
+      "name": "Lviv liceum of Boxing",
+      "alphaTwoCode": "UA",
+      "domains": "lviv.boxing.ua",
+      "stateProvince": "Lviv",
+      "country": "Україна",
+      "webPages": "lviv.boxing.ua"
+    },
+    {
+      "id": "1002",
+      "name": "Boxing liceum",
+      "alphaTwoCode": "UA",
+      "domains": "boxing.ua",
+      "stateProvince": "Ua",
+      "country": "Ukraine",
+      "webPages": "boxing.ua"
+    },
+    {
+      "id": 667,
+      "name": "School Karate ",
+      "alphaTwoCode": "UA",
+      "domains": "karate.ua",
+      "stateProvince": "Sambir",
+      "country": "Ukraine",
+      "webPages": "karate.ua"
+    },
+    {
+      "id": 667,
+      "name": "School Karate ",
+      "alphaTwoCode": "UA",
+      "domains": "karate.ua",
+      "stateProvince": "Sambir",
+      "country": "Ukraine",
+      "webPages": "karate.ua"
     }
   ]
 }

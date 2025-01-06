@@ -28,6 +28,7 @@
       <span>{{ university.country_code }} </span> -->
       <a target="_blank" [href]="university.webPages[0]">Link on website</a>
       <!--       <a target="_blank" [href]="university.web_pages1[0]">Link on website1</a> -->
+      <button (click)="openEditPage(university.id)">Edit</button>
       <button (click)="deleteUniversity(university.id)">Delete</button>
     </li>
   </ul>

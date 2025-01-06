@@ -103,4 +103,7 @@ export class UniversitiesComponent implements OnInit {
   openCreatePage() {
     this.router.navigate(['universities/create']);
   }
+  openEditPage(id: number) {
+    this.router.navigate(['universities/edit/' + id]);
+  }
 }
