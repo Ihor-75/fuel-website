@@ -1680,7 +1680,7 @@
       "webPages": "boxing.ua"
     },
     {
-      "id": 667,
+      "id": "667",
       "name": "School Karate ",
       "alphaTwoCode": "UA",
       "domains": "karate.ua",
@@ -1689,13 +1689,40 @@
       "webPages": "karate.ua"
     },
     {
-      "id": 667,
+      "id": "667",
       "name": "School Karate ",
       "alphaTwoCode": "UA",
       "domains": "karate.ua",
       "stateProvince": "Sambir",
       "country": "Ukraine",
       "webPages": "karate.ua"
+    },
+    {
+      "id": "668",
+      "name": "Shool",
+      "alphaTwoCode": "UA",
+      "domains": "shool.ua",
+      "stateProvince": null,
+      "country": "Ukraine",
+      "webPages": "shool.ua"
+    },
+    {
+      "id": "669",
+      "name": "Shool Boxing",
+      "alphaTwoCode": "UA",
+      "domains": "ua.ua",
+      "stateProvince": null,
+      "country": "Ukraine",
+      "webPages": "ua.ua"
+    },
+    {
+      "id": "700",
+      "name": "Boxing liceum",
+      "alphaTwoCode": "UA",
+      "domains": "liceum.com",
+      "stateProvince": null,
+      "country": "Ukraine",
+      "webPages": "liceum.com"
     }
   ]
 }

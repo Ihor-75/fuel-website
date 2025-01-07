@@ -8,7 +8,7 @@
 >
   <mat-form-field appearance="fill" class="form-field">
     <mat-label>ID</mat-label>
-    <input matInput id="id" formControlName="id" type="number" />
+    <input matInput id="id" formControlName="id" type="text" />
     <mat-error *ngIf="universityForm.get('id')?.hasError('required')">
       ID is required.
     </mat-error>

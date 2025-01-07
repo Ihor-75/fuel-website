@@ -1,5 +1,3 @@
-import id from '@angular/common/locales/id';
-import { Univercity } from './../services/university.model';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
@@ -87,11 +85,6 @@ export class CreateUniversityComponent {
             this.openListPage();
           });
       }
-      this.apiService
-        .createUnivercity(this.universityForm.value)
-        .subscribe(() => {
-          this.openListPage();
-        });
     } else {
       alert('Please fill in all required fields.');
     }
